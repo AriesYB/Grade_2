@@ -1,0 +1,11 @@
+package com.huawei;
+
+public class T {
+
+	public static void main(String[] args) {
+		System.read("C://Users/管理员/Desktop/car.txt", "C://Users/管理员/Desktop/road.txt", "C://Users/管理员/Desktop/cross.txt");
+		System.launch();
+		System.write("C://Users/管理员/Desktop/answer.txt");
+	}
+
+}

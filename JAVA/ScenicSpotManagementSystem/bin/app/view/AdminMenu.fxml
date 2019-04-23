@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="609.0" prefWidth="854.0" style="-fx-background-color: #333333;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.view.AdminMenuController">
+   <children>
+      <AnchorPane fx:id="Pane_1" layoutX="-4.0" prefHeight="609.0" prefWidth="684.0">
+         <children>
+            <JFXButton layoutX="295.0" layoutY="60.0" onAction="#search" prefHeight="30.0" prefWidth="58.0" style="-fx-background-color: #d4d2d2; -fx-cursor: hand;" text="搜索">
+               <font>
+                  <Font size="14.0" />
+               </font></JFXButton>
+            <TextField fx:id="text" layoutX="175.0" layoutY="60.0" onMousePressed="#cleanSearch" opacity="0.66" prefHeight="30.0" prefWidth="108.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <AnchorPane layoutX="8.0" layoutY="92.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="457.0" prefWidth="346.0">
+               <children>
+                  <TableView fx:id="tableView" opacity="0.79" prefHeight="455.0" prefWidth="346.0" AnchorPane.rightAnchor="0.0">
+                     <columns>
+                        <TableColumn fx:id="placeColumn" editable="false" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="123.0" sortable="false" text="景点" />
+                        <TableColumn fx:id="adjPlaceColumn" editable="false" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="291.99998474121094" sortable="false" text="能到达的景区" />
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="356.0" layoutY="92.0" prefHeight="402.0" prefWidth="334.0" style="-fx-background-color: #333333;">
+               <children>
+                  <Text fx:id="placeName" fill="WHITE" layoutX="91.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="94.30029296875">
+                     <font>
+                        <Font name="KaiTi" size="21.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="popularity" fill="WHITE" layoutX="276.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" " wrappingWidth="119.19999122619623">
+                     <font>
+                        <Font name="KaiTi" size="21.0" />
+                     </font>
+                  </Text>
+                  <Label layoutY="3.0" text="景区名称：" textFill="#9c9c9c">
+                     <font>
+                        <Font name="KaiTi" size="21.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="222.0" layoutY="1.0" text="人气：" textFill="#9c9c9c">
+                     <font>
+                        <Font name="KaiTi" size="21.0" />
+                     </font>
+                  </Label>
+                  <Label layoutY="114.0" text="简介：" textFill="#9c9c9c">
+                     <font>
+                        <Font name="KaiTi" size="21.0" />
+                     </font>
+                  </Label>
+                  <Label layoutY="60.0" text="有无休息区：" textFill="#9c9c9c">
+                     <font>
+                        <Font name="KaiTi" size="21.0" />
+                     </font>
+                  </Label>
+                  <Text fx:id="hasRestArea" fill="WHITE" layoutX="111.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="29.30029296875">
+                     <font>
+                        <Font name="KaiTi" size="21.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="hasToilet" fill="WHITE" layoutX="276.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="29.30029296875">
+                     <font>
+                        <Font name="KaiTi" size="21.0" />
+                     </font>
+                  </Text>
+                  <Label layoutX="185.0" layoutY="60.0" text="有无厕所：" textFill="#9c9c9c">
+                     <font>
+                        <Font name="KaiTi" size="21.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="placeIntroduction" editable="false" layoutY="152.0" opacity="0.51" prefHeight="234.0" prefWidth="395.0" style="-fx-background-color: #333333; -fx-border-color: #333333;" wrapText="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextArea>
+               </children>
+            </AnchorPane>
+            <JFXButton layoutX="511.0" layoutY="494.0" onAction="#edit" prefHeight="30.0" prefWidth="58.0" style="-fx-background-color: #d4d2d2; -fx-cursor: hand;" text="编辑">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="419.0" layoutY="494.0" onAction="#add" prefHeight="30.0" prefWidth="58.0" style="-fx-background-color: #d4d2d2; -fx-cursor: hand;" text="添加">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="600.0" layoutY="494.0" onAction="#delete" prefHeight="30.0" prefWidth="58.0" style="-fx-background-color: #d4d2d2; -fx-cursor: hand;" text="删除">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXComboBox fx:id="combobox" focusColor="#405aa800" layoutX="14.0" layoutY="63.0" prefHeight="23.0" prefWidth="88.0" style="-fx-cursor: hand; -fx-background-color: #bfbfbf;" unFocusColor="#4d4d4d00" />
+            <JFXButton layoutX="103.0" layoutY="63.0" onAction="#sort" prefHeight="23.0" prefWidth="56.0" style="-fx-background-color: #bfbfbf; -fx-cursor: hand;" text="排序" textFill="#2b2929" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="Pane_2" layoutX="70.0" prefHeight="609.0" prefWidth="684.0" visible="false">
+         <children>
+            <Label layoutX="115.0" layoutY="108.0" prefHeight="43.0" prefWidth="97.0" text="当前公告" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="announcement" editable="false" layoutX="115.0" layoutY="151.0" prefHeight="227.0" prefWidth="454.0">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </TextArea>
+            <JFXButton fx:id="change_butn2" disable="true" layoutX="469.0" layoutY="410.0" onAction="#changeText" prefHeight="30.0" prefWidth="86.0" style="-fx-background-color: #d4d2d2; -fx-cursor: hand;" text="发布">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="change_butn1" layoutX="342.0" layoutY="410.0" onAction="#editText" prefHeight="30.0" prefWidth="86.0" style="-fx-background-color: #d4d2d2; -fx-cursor: hand;" text="编辑">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="Pane_3" layoutX="80.0" layoutY="10.0" prefHeight="619.6" prefWidth="854.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane layoutX="14.0" layoutY="83.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="457.0" prefWidth="346.0">
+               <children>
+                  <TableView fx:id="tableView_1" opacity="0.79" prefHeight="455.0" prefWidth="170.0" AnchorPane.rightAnchor="178.0">
+                     <columns>
+                        <TableColumn fx:id="placeColumn_1" editable="false" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="169.59999408721924" sortable="false" text="景点" />
+                     </columns>
+                  </TableView>
+                  <TableView fx:id="tableView_3" layoutX="167.0" opacity="0.79" prefHeight="455.0" prefWidth="178.0">
+                     <columns>
+                        <TableColumn fx:id="placeColumn_3" editable="false" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="177.60002746582032" sortable="false" text="可选择的景点" />
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="443.0" layoutY="83.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="457.0" prefWidth="346.0">
+               <children>
+                  <TableView fx:id="tableView_2" opacity="0.79" prefHeight="455.0" prefWidth="346.0" AnchorPane.rightAnchor="0.0">
+                     <columns>
+                        <TableColumn fx:id="placeColumn_2" editable="false" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="345.6000122070312" sortable="false" text="能到达的景点" />
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+            <JFXButton fx:id="add_butn" layoutX="374.0" layoutY="187.0" onAction="#addAdj" prefHeight="30.0" prefWidth="58.0" style="-fx-background-color: #d4d2d2; -fx-cursor: hand;" text="添加">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="delete_butn" layoutX="374.0" layoutY="274.0" onAction="#deleteAdj" prefHeight="30.0" prefWidth="58.0" style="-fx-background-color: #d4d2d2; -fx-cursor: hand;" text="删除">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXComboBox fx:id="combobox_1" focusColor="#405aa800" layoutX="33.0" layoutY="48.0" prefHeight="23.0" prefWidth="88.0" style="-fx-cursor: hand; -fx-background-color: #bfbfbf;" unFocusColor="#4d4d4d00" />
+            <JFXButton layoutX="139.0" layoutY="48.0" onAction="#sort_1" prefHeight="23.0" prefWidth="56.0" style="-fx-background-color: #bfbfbf; -fx-cursor: hand;" text="排序" textFill="#2b2929" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="menuPane" layoutX="702.0" prefHeight="144.0" prefWidth="150.0" style="-fx-background-color: #000;" visible="false">
+         <children>
+            <Label layoutX="76.0" layoutY="5.0" prefHeight="23.0" prefWidth="38.0" text="菜单" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="button_1" disable="true" layoutY="50.0" onAction="#menu_1" prefHeight="52.0" prefWidth="150.0" stylesheets="@../../../resources/css/AdminMenu.css" text="景点管理" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="button_3" layoutY="102.0" onAction="#menu_3" prefHeight="52.0" prefWidth="150.0" stylesheets="@../../../resources/css/AdminMenu.css" text="路线管理" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="button_2" layoutY="154.0" onAction="#menu_2" prefHeight="52.0" prefWidth="150.0" stylesheets="@../../../resources/css/AdminMenu.css" text="发布公告" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <JFXHamburger fx:id="hamburger" layoutX="818.0" layoutY="9.0" stylesheets="@../../../resources/css/AdminMenu.css" />
+      <AnchorPane fx:id="pane_butn" onMouseClicked="#backToMain" onMousePressed="#setPressedColor" onMouseReleased="#setReleasedColor" prefHeight="30.0" prefWidth="46.0" stylesheets="@../../../resources/css/AdminCheck.css">
+         <children>
+            <Line fx:id="line_1" endX="-80.0" endY="10.0" fill="BLACK" layoutX="100.0" layoutY="15.0" startX="-90.0" styleClass="line" />
+            <Line fx:id="line_2" endX="-80.0" endY="-10.0" layoutX="100.0" layoutY="15.0" startX="-90.0" styleClass="line" />
+            <Line fx:id="line_3" endX="-70.39998626708984" endY="-7.62939453125E-6" layoutX="100.0" layoutY="15.0" startX="-90.0" styleClass="line" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

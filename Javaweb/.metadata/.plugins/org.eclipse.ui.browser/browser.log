@@ -1,0 +1,570 @@
+
+11月 12, 2018 22:45:45.67 NEW SESSION
+11月 12, 2018 22:45:45.67 [19172:9900:1112/224545.671:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 12, 2018 22:45:45.67 [19172:9900:1112/224545.671:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 12, 2018 22:45:45.67 [19172:9900:1112/224545.671:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 12, 2018 22:45:45.68 [19172:9900:1112/224545.671:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 12, 2018 22:47:31.45 [14496:19040:1112/224731.450:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4215)] NOT IMPLEMENTED
+11月 12, 2018 22:47:45.46 [1628:18980:1112/224745.463:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 12, 2018 22:47:45.46 [1628:18980:1112/224745.463:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 12, 2018 22:47:45.46 [1628:18980:1112/224745.463:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 12, 2018 22:47:45.46 [1628:18980:1112/224745.463:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 12, 2018 23:09:05.39 [1628:11068:1112/230905.389:ERROR:ssl_client_socket_impl.cc(1013)] handshake failed; returned -1, SSL error code 1, net_error -101
+11月 12, 2018 23:18:49.19 [15940:18776:1112/231849.191:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4215)] NOT IMPLEMENTED
+11月 12, 2018 23:18:59.23 [15616:14604:1112/231859.231:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 12, 2018 23:18:59.23 [15616:14604:1112/231859.231:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 12, 2018 23:18:59.23 [15616:14604:1112/231859.231:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 12, 2018 23:18:59.23 [15616:14604:1112/231859.231:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 12, 2018 23:23:45.86 [16068:4452:1112/232345.862:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4215)] NOT IMPLEMENTED
+11月 12, 2018 23:29:03.30 [19344:15928:1112/232903.298:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 12, 2018 23:29:03.30 [19344:15928:1112/232903.298:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 12, 2018 23:29:03.30 [19344:15928:1112/232903.298:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 12, 2018 23:29:03.30 [19344:15928:1112/232903.298:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+
+11月 13, 2018 13:59:37.79 NEW SESSION
+11月 13, 2018 13:59:37.79 [5512:916:1113/135937.583:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 13, 2018 13:59:37.80 [5512:916:1113/135937.583:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 13, 2018 13:59:37.81 [5512:916:1113/135937.583:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 13, 2018 13:59:37.81 [5512:916:1113/135937.583:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 13, 2018 13:59:40.79 [356:6848:1113/135940.793:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4215)] NOT IMPLEMENTED
+11月 13, 2018 13:59:58.19 [1880:9060:1113/135958.192:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 13, 2018 13:59:58.19 [1880:9060:1113/135958.192:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 13, 2018 13:59:58.19 [1880:9060:1113/135958.192:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 13, 2018 13:59:58.19 [1880:9060:1113/135958.192:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 13, 2018 13:59:59.87 [8660:8616:1113/135959.873:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4215)] NOT IMPLEMENTED
+11月 13, 2018 14:20:46.17 [2700:9568:1113/142046.178:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 13, 2018 14:20:46.17 [2700:9568:1113/142046.178:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 13, 2018 14:20:46.17 [2700:9568:1113/142046.178:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 13, 2018 14:20:46.17 [2700:9568:1113/142046.179:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 13, 2018 14:20:57.44 [10888:10464:1113/142057.447:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4215)] NOT IMPLEMENTED
+11月 13, 2018 15:03:19.26 [4468:10336:1113/150319.261:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 13, 2018 15:03:19.26 [4468:10336:1113/150319.261:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 13, 2018 15:03:19.26 [4468:10336:1113/150319.261:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 13, 2018 15:03:19.26 [4468:10336:1113/150319.261:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 13, 2018 15:20:51.22 [3852:4676:1113/152051.225:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4215)] NOT IMPLEMENTED
+
+11月 13, 2018 22:40:05.50 NEW SESSION
+11月 13, 2018 22:40:05.50 [13540:3428:1113/224005.496:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 13, 2018 22:40:05.50 [13540:3428:1113/224005.496:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 13, 2018 22:40:05.50 [13540:3428:1113/224005.496:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 13, 2018 22:40:05.50 [13540:3428:1113/224005.496:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+
+11月 13, 2018 23:26:36.21 NEW SESSION
+11月 13, 2018 23:26:36.21 [12224:9368:1113/232636.213:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 13, 2018 23:26:36.21 [12224:9368:1113/232636.214:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 13, 2018 23:26:36.21 [12224:9368:1113/232636.214:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 13, 2018 23:26:36.21 [12224:9368:1113/232636.214:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+
+11月 14, 2018 10:52:58.93 NEW SESSION
+11月 14, 2018 10:52:58.94 [9068:9144:1114/105258.931:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 10:52:58.94 [9068:9144:1114/105258.931:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 10:52:58.94 [9068:9144:1114/105258.931:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 10:52:58.94 [9068:9144:1114/105258.931:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 11:01:00.86 [2824:6484:1114/110100.867:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4215)] NOT IMPLEMENTED
+11月 14, 2018 11:01:10.68 [9876:804:1114/110110.682:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 11:01:10.68 [9876:804:1114/110110.682:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 11:01:10.68 [9876:804:1114/110110.682:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 11:01:10.68 [9876:804:1114/110110.682:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 11:03:11.08 [9500:7084:1114/110311.084:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4215)] NOT IMPLEMENTED
+11月 14, 2018 11:03:58.11 [4304:4516:1114/110358.114:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 11:03:58.11 [4304:4516:1114/110358.114:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 11:03:58.11 [4304:4516:1114/110358.114:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 11:03:58.11 [4304:4516:1114/110358.114:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 11:24:24.94 [5716:3888:1114/112424.949:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4215)] NOT IMPLEMENTED
+11月 14, 2018 11:26:25.03 [10364:2760:1114/112625.037:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 11:26:25.03 [10364:2760:1114/112625.038:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 11:26:25.03 [10364:2760:1114/112625.038:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 11:26:25.03 [10364:2760:1114/112625.038:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 11:27:39.59 [9224:9568:1114/112739.597:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4215)] NOT IMPLEMENTED
+11月 14, 2018 11:33:29.13 [10940:8460:1114/113329.134:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 11:33:29.13 [10940:8460:1114/113329.134:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 11:33:29.13 [10940:8460:1114/113329.134:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 11:33:29.13 [10940:8460:1114/113329.134:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 11:43:54.88 [3220:2692:1114/114354.887:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4215)] NOT IMPLEMENTED
+11月 14, 2018 11:44:02.32 [5380:8552:1114/114402.321:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 11:44:02.32 [5380:8552:1114/114402.321:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 11:44:02.32 [5380:8552:1114/114402.321:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 11:44:02.32 [5380:8552:1114/114402.321:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 11:45:38.12 [8024:7200:1114/114538.124:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4215)] NOT IMPLEMENTED
+11月 14, 2018 11:45:43.18 [6972:3984:1114/114543.181:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 11:45:43.18 [6972:3984:1114/114543.181:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 11:45:43.18 [6972:3984:1114/114543.181:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 11:45:43.18 [6972:3984:1114/114543.181:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 12:03:36.63 [8720:11164:1114/120336.630:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4215)] NOT IMPLEMENTED
+11月 14, 2018 12:03:37.40 [8720:11164:1114/120337.408:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4215)] NOT IMPLEMENTED
+11月 14, 2018 12:03:46.26 [9756:8928:1114/120346.256:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 12:03:46.26 [9756:8928:1114/120346.256:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 12:03:46.26 [9756:8928:1114/120346.256:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 12:03:46.26 [9756:8928:1114/120346.256:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 12:10:13.32 [5560:11036:1114/121013.320:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4215)] NOT IMPLEMENTED
+
+11月 14, 2018 12:37:37.61 NEW SESSION
+11月 14, 2018 12:37:37.61 [11676:11296:1114/123737.614:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 12:37:37.61 [11676:11296:1114/123737.614:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 12:37:37.61 [11676:11296:1114/123737.614:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 12:37:37.66 [11676:11296:1114/123737.614:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 15:19:57.20 [9148:12100:1114/151957.201:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4215)] NOT IMPLEMENTED
+11月 14, 2018 15:22:52.31 [16896:13216:1114/152252.312:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 15:22:52.31 [16896:13216:1114/152252.312:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 15:22:52.31 [16896:13216:1114/152252.312:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 15:22:52.31 [16896:13216:1114/152252.312:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 15:31:08.59 [15552:14608:1114/153108.590:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4215)] NOT IMPLEMENTED
+11月 14, 2018 16:21:00.10 [15188:14328:1114/162100.108:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4215)] NOT IMPLEMENTED
+
+11月 14, 2018 16:59:13.51 NEW SESSION
+11月 14, 2018 16:59:13.51 [7360:7024:1114/165913.512:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 16:59:13.53 [7360:7024:1114/165913.512:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 16:59:13.53 [7360:7024:1114/165913.512:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 16:59:13.53 [7360:7024:1114/165913.512:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 17:05:47.35 [904:11208:1114/170547.355:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4215)] NOT IMPLEMENTED
+11月 14, 2018 17:10:49.18 [7640:9540:1114/171049.184:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 17:10:49.18 [7640:9540:1114/171049.184:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 17:10:49.18 [7640:9540:1114/171049.184:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 17:10:49.18 [7640:9540:1114/171049.184:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 17:16:26.26 [3416:7128:1114/171626.267:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4215)] NOT IMPLEMENTED
+11月 14, 2018 17:17:47.56 [8608:6892:1114/171747.567:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 17:17:47.56 [8608:6892:1114/171747.568:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 17:17:47.56 [8608:6892:1114/171747.568:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 17:17:47.56 [8608:6892:1114/171747.568:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 17:17:57.89 [10272:6008:1114/171757.899:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4215)] NOT IMPLEMENTED
+
+11月 14, 2018 17:25:00.61 NEW SESSION
+11月 14, 2018 17:25:00.61 [7860:10404:1114/172500.588:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 17:25:00.61 [7860:10404:1114/172500.588:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 17:25:00.61 [7860:10404:1114/172500.588:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 17:25:00.61 [7860:10404:1114/172500.588:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 18:14:22.91 [7860:8904:1114/181422.912:ERROR:ssl_client_socket_impl.cc(1013)] handshake failed; returned -1, SSL error code 1, net_error -101
+
+11月 14, 2018 20:09:43.10 NEW SESSION
+11月 14, 2018 20:09:43.10 [6960:4196:1114/200943.100:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 20:09:43.10 [6960:4196:1114/200943.100:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 20:09:43.10 [6960:4196:1114/200943.100:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 20:09:43.10 [6960:4196:1114/200943.100:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 21:09:59.40 [13724:13536:1114/210959.403:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4215)] NOT IMPLEMENTED
+11月 14, 2018 21:39:39.01 [15796:15572:1114/213939.017:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 21:39:39.01 [15796:15572:1114/213939.017:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 21:39:39.01 [15796:15572:1114/213939.017:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 21:39:39.01 [15796:15572:1114/213939.017:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 22:38:53.86 [8296:14868:1114/223853.866:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 22:38:53.86 [8296:14868:1114/223853.866:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 22:38:53.87 [8296:14868:1114/223853.866:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 14, 2018 22:38:53.87 [8296:14868:1114/223853.866:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+
+11月 15, 2018 14:27:35.98 NEW SESSION
+11月 15, 2018 14:27:35.98 [9060:9300:1115/142735.964:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 15, 2018 14:27:36.00 [9060:9300:1115/142735.965:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 15, 2018 14:27:36.00 [9060:9300:1115/142735.965:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 15, 2018 14:27:36.00 [9060:9300:1115/142735.965:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+
+11月 15, 2018 21:18:42.80 NEW SESSION
+11月 15, 2018 21:18:42.80 [13752:13732:1115/211842.687:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4215)] NOT IMPLEMENTED
+
+11月 17, 2018 10:46:47.76 NEW SESSION
+11月 17, 2018 10:46:47.76 [13252:3596:1117/104647.743:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 17, 2018 10:46:47.87 [13252:3596:1117/104647.743:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 17, 2018 10:46:48.08 [13252:3596:1117/104647.743:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 17, 2018 10:46:48.12 [13252:3596:1117/104647.743:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 17, 2018 10:52:38.97 [13756:12480:1117/105238.972:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4215)] NOT IMPLEMENTED
+
+11月 19, 2018 14:09:37.26 NEW SESSION
+11月 19, 2018 14:09:37.26 [8856:8848:1119/140937.252:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 19, 2018 14:09:37.28 [8856:8848:1119/140937.252:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 19, 2018 14:09:37.28 [8856:8848:1119/140937.252:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 19, 2018 14:09:37.28 [8856:8848:1119/140937.252:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+
+11月 21, 2018 21:12:28.20 NEW SESSION
+11月 21, 2018 21:12:28.20 [4172:1108:1121/211228.200:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4215)] NOT IMPLEMENTED
+11月 21, 2018 21:12:44.78 [3308:7096:1121/211244.785:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 21, 2018 21:12:44.78 [3308:7096:1121/211244.785:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 21, 2018 21:12:44.78 [3308:7096:1121/211244.785:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 21, 2018 21:12:44.78 [3308:7096:1121/211244.785:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 21, 2018 21:26:55.82 [12308:11956:1121/212655.822:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4215)] NOT IMPLEMENTED
+11月 21, 2018 21:27:05.79 [13284:4980:1121/212705.794:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 21, 2018 21:27:05.79 [13284:4980:1121/212705.794:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 21, 2018 21:27:05.79 [13284:4980:1121/212705.794:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 21, 2018 21:27:05.79 [13284:4980:1121/212705.794:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 21, 2018 21:27:12.69 [13532:3376:1121/212712.694:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4215)] NOT IMPLEMENTED
+11月 21, 2018 21:27:33.37 [12788:13880:1121/212733.375:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 21, 2018 21:27:33.37 [12788:13880:1121/212733.375:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 21, 2018 21:27:33.37 [12788:13880:1121/212733.375:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 21, 2018 21:27:33.37 [12788:13880:1121/212733.375:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 21, 2018 22:07:31.26 [12788:13880:1121/220731.262:ERROR:CONSOLE(0)] "Access to XMLHttpRequest at 'https://play.google.com/log?format=json&hasfast=true' from origin 'chrome-search://local-ntp' has been blocked by CORS policy: The 'Access-Control-Allow-Origin' header has a value 'http://play.google.com' that is not equal to the supplied origin.", source: chrome-search://local-ntp/local-ntp.html (0)
+11月 21, 2018 22:09:34.77 [12424:9008:1121/220934.773:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4215)] NOT IMPLEMENTED
+11月 21, 2018 22:24:20.71 [14544:9488:1121/222420.716:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 21, 2018 22:24:20.71 [14544:9488:1121/222420.716:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 21, 2018 22:24:20.71 [14544:9488:1121/222420.716:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 21, 2018 22:24:20.71 [14544:9488:1121/222420.716:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+
+11月 22, 2018 09:32:14.85 NEW SESSION
+11月 22, 2018 09:32:14.85 [3112:1408:1122/093214.837:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 22, 2018 09:32:14.86 [3112:1408:1122/093214.837:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 22, 2018 09:32:14.86 [3112:1408:1122/093214.837:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 22, 2018 09:32:14.86 [3112:1408:1122/093214.837:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+
+11月 22, 2018 14:42:20.71 NEW SESSION
+11月 22, 2018 14:42:20.71 [10952:2552:1122/144220.688:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 22, 2018 14:42:20.72 [10952:2552:1122/144220.688:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 22, 2018 14:42:20.72 [10952:2552:1122/144220.688:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 22, 2018 14:42:20.72 [10952:2552:1122/144220.688:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 22, 2018 15:53:06.43 [11432:11436:1122/155306.431:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4215)] NOT IMPLEMENTED
+
+11月 22, 2018 19:44:50.00 NEW SESSION
+11月 22, 2018 19:44:50.00 [2136:3512:1122/194449.893:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4215)] NOT IMPLEMENTED
+11月 22, 2018 20:19:59.62 [2088:11324:1122/201959.627:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4215)] NOT IMPLEMENTED
+11月 22, 2018 20:35:04.37 [13476:14220:1122/203504.377:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 22, 2018 20:35:04.37 [13476:14220:1122/203504.377:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 22, 2018 20:35:04.37 [13476:14220:1122/203504.377:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 22, 2018 20:35:04.37 [13476:14220:1122/203504.377:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 22, 2018 20:42:16.54 [11748:3252:1122/204216.540:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4215)] NOT IMPLEMENTED
+11月 22, 2018 20:52:55.26 [3960:11792:1122/205255.262:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 22, 2018 20:52:55.26 [3960:11792:1122/205255.262:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 22, 2018 20:52:55.26 [3960:11792:1122/205255.262:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 22, 2018 20:52:55.26 [3960:11792:1122/205255.262:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+
+11月 23, 2018 08:58:42.54 NEW SESSION
+11月 23, 2018 08:58:42.54 [5088:3184:1123/085842.508:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 23, 2018 08:58:42.58 [5088:3184:1123/085842.508:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 23, 2018 08:58:42.59 [5088:3184:1123/085842.508:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 23, 2018 08:58:42.59 [5088:3184:1123/085842.508:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 23, 2018 09:50:32.44 [5088:6912:1123/095032.446:ERROR:ssl_client_socket_impl.cc(1013)] handshake failed; returned -1, SSL error code 1, net_error -101
+11月 23, 2018 15:12:24.84 [5088:3184:1123/151224.848:ERROR:CONSOLE(36)] "Uncaught TypeError: Cannot read property 'displayName' of undefined", source: chrome://settings/lazy_load.crisper.js (36)
+11月 23, 2018 15:12:24.84 [5088:3184:1123/151224.848:ERROR:CONSOLE(36)] "Uncaught TypeError: Cannot read property 'displayName' of undefined", source: chrome://settings/lazy_load.crisper.js (36)
+
+11月 23, 2018 16:06:04.61 NEW SESSION
+11月 23, 2018 16:06:04.62 [8668:8464:1123/160604.615:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 23, 2018 16:06:04.63 [8668:8464:1123/160604.615:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 23, 2018 16:06:04.63 [8668:8464:1123/160604.615:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 23, 2018 16:06:04.63 [8668:8464:1123/160604.615:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+
+11月 23, 2018 22:12:28.23 NEW SESSION
+11月 23, 2018 22:12:28.23 [13216:12052:1123/221228.215:ERROR:CONSOLE(970)] "TypeError: Cannot read property 'pseudoType' of undefined TypeError: Cannot read property 'pseudoType' of undefined
+11月 23, 2018 22:12:28.25     at SDK.DOMNode._removeChild (chrome-devtools://devtools/bundled/shell.js:4303:28)
+11月 23, 2018 22:12:28.25     at SDK.DOMModel._childNodeRemoved (chrome-devtools://devtools/bundled/shell.js:4422:121)
+11月 23, 2018 22:12:28.25     at SDK.DOMDispatcher.childNodeRemoved (chrome-devtools://devtools/bundled/shell.js:4465:54)
+11月 23, 2018 22:12:28.25     at Protocol.InspectorBackend._DispatcherPrototype.dispatch (chrome-devtools://devtools/bundled/shell.js:3402:26)
+11月 23, 2018 22:12:28.25     at SDK.Target._onMessage (chrome-devtools://devtools/bundled/shell.js:3353:31)
+11月 23, 2018 22:12:28.25     at SDK.MainConnection._dispatchMessage (chrome-devtools://devtools/bundled/shell.js:3490:41)
+11月 23, 2018 22:12:28.25     at Common.Object.dispatchEventToListeners (chrome-devtools://devtools/bundled/shell.js:490:23)
+11月 23, 2018 22:12:28.25     at innerDispatch (chrome-devtools://devtools/bundled/shell.js:970:98)
+11月 23, 2018 22:12:28.25     at Host.InspectorFrontendAPIImpl._dispatch (chrome-devtools://devtools/bundled/shell.js:970:1)
+11月 23, 2018 22:12:28.25     at DevToolsAPIImpl._dispatchOnInspectorFrontendAPI (chrome-devtools://devtools/bundled/devtools_compatibility.js:57:36)", source: chrome-devtools://devtools/bundled/shell.js (970)
+11月 23, 2018 23:40:52.19 [13216:16296:1123/234052.193:ERROR:tcp_socket_win.cc(865)] connect failed: 10013
+11月 23, 2018 23:56:42.32 Received fatal exception EXCEPTION_ACCESS_VIOLATION
+11月 23, 2018 23:56:42.34 Backtrace:
+11月 23, 2018 23:56:42.34 	ovly_debug_event [0x11191396+18937990]
+11月 23, 2018 23:56:42.34 	ovly_debug_event [0x11190F57+18936903]
+11月 23, 2018 23:56:42.34 	IsSandboxedProcess [0x1130B15A+1388274]
+11月 23, 2018 23:56:42.34 	ovly_debug_event [0x10ED0093+16049539]
+11月 23, 2018 23:56:42.34 	ovly_debug_event [0x10ED02A3+16050067]
+11月 23, 2018 23:56:42.34 	ovly_debug_event [0x10ED0514+16050692]
+11月 23, 2018 23:56:42.34 	IsSandboxedProcess [0x1130D62A+1397698]
+11月 23, 2018 23:56:42.35 	ovly_debug_event [0x10ECFEFF+16049135]
+11月 23, 2018 23:56:42.35 	ovly_debug_event [0x10EE560E+16136958]
+11月 23, 2018 23:56:42.35 	ovly_debug_event [0x10F0529B+16267147]
+11月 23, 2018 23:56:42.35 	ovly_debug_event [0x10F05405+16267509]
+11月 23, 2018 23:56:42.35 	ovly_debug_event [0x10F03E95+16262021]
+11月 23, 2018 23:56:42.35 	BaseThreadInitThunk [0x75608484+36]
+11月 23, 2018 23:56:42.35 	RtlValidSecurityDescriptor [0x77A12EC0+448]
+11月 23, 2018 23:56:42.35 	RtlValidSecurityDescriptor [0x77A12E90+400]
+
+11月 24, 2018 08:34:10.07 NEW SESSION
+11月 24, 2018 08:34:10.07 [5908:1836:1124/083410.070:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 24, 2018 08:34:10.08 [5908:1836:1124/083410.070:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 24, 2018 08:34:10.08 [5908:1836:1124/083410.070:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 24, 2018 08:34:10.08 [5908:1836:1124/083410.070:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 24, 2018 08:37:25.04 [9420:9668:1124/083725.035:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 24, 2018 08:37:25.04 [9420:9668:1124/083725.035:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 24, 2018 08:37:25.04 [9420:9668:1124/083725.035:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 24, 2018 08:37:25.04 [9420:9668:1124/083725.036:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 24, 2018 08:37:28.05 [6900:8184:1124/083728.050:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4215)] NOT IMPLEMENTED
+
+11月 24, 2018 08:40:57.26 NEW SESSION
+11月 24, 2018 08:40:57.26 [9492:9524:1124/084057.263:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 24, 2018 08:40:57.27 [9492:9524:1124/084057.264:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 24, 2018 08:40:57.27 [9492:9524:1124/084057.264:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 24, 2018 08:40:57.27 [9492:9524:1124/084057.264:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 24, 2018 08:58:42.21 [10116:5820:1124/085842.218:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4215)] NOT IMPLEMENTED
+
+11月 24, 2018 15:21:43.40 NEW SESSION
+11月 24, 2018 15:21:43.40 [2088:2124:1124/152143.399:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 24, 2018 15:21:43.43 [2088:2124:1124/152143.399:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 24, 2018 15:21:43.43 [2088:2124:1124/152143.400:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 24, 2018 15:21:43.43 [2088:2124:1124/152143.400:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 24, 2018 15:27:02.22 [2088:2124:1124/152702.224:ERROR:CONSOLE(24)] "Empty response arrived for script 'chrome-devtools://devtools/remote/serve_file/@c0e623bbbea03eedc22375bd7a44a7eb288708d9/product_registry_impl/product_registry_impl_module.js'", source: chrome-devtools://devtools/bundled/shell.js (24)
+11月 24, 2018 15:27:02.25 [2088:2124:1124/152702.251:ERROR:CONSOLE(108)] "Uncaught (in promise) Error: Could not instantiate: ProductRegistryImpl.Registry", source: chrome-devtools://devtools/bundled/shell.js (108)
+11月 24, 2018 15:27:02.25 [2088:2124:1124/152702.252:ERROR:CONSOLE(108)] "Uncaught (in promise) Error: Could not instantiate: ProductRegistryImpl.Registry", source: chrome-devtools://devtools/bundled/shell.js (108)
+11月 24, 2018 15:27:02.25 [2088:2124:1124/152702.252:ERROR:CONSOLE(108)] "Uncaught (in promise) Error: Could not instantiate: ProductRegistryImpl.Registry", source: chrome-devtools://devtools/bundled/shell.js (108)
+11月 24, 2018 15:39:05.02 [2088:2124:1124/153905.027:ERROR:CONSOLE(36)] "Uncaught TypeError: Cannot read property 'displayName' of undefined", source: chrome://settings/lazy_load.crisper.js (36)
+11月 24, 2018 15:39:05.02 [2088:2124:1124/153905.028:ERROR:CONSOLE(36)] "Uncaught TypeError: Cannot read property 'displayName' of undefined", source: chrome://settings/lazy_load.crisper.js (36)
+
+11月 25, 2018 11:19:33.39 NEW SESSION
+11月 25, 2018 11:19:33.39 [5104:1492:1125/111933.371:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 25, 2018 11:19:33.40 [5104:1492:1125/111933.371:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 25, 2018 11:19:33.40 [5104:1492:1125/111933.372:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 25, 2018 11:19:33.40 [5104:1492:1125/111933.372:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 25, 2018 11:20:14.02 [12680:976:1125/112014.022:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4215)] NOT IMPLEMENTED
+
+11月 29, 2018 22:14:20.42 NEW SESSION
+11月 29, 2018 22:14:20.42 [7836:3764:1129/221420.389:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 29, 2018 22:14:20.43 [7836:3764:1129/221420.389:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 29, 2018 22:14:20.43 [7836:3764:1129/221420.389:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 29, 2018 22:14:20.43 [7836:3764:1129/221420.389:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 29, 2018 22:14:20.43 [7836:3764:1129/221420.389:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 29, 2018 22:18:06.69 [12920:11300:1129/221806.692:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 29, 2018 22:18:06.69 [12920:11300:1129/221806.692:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 29, 2018 22:18:06.69 [12920:11300:1129/221806.692:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 29, 2018 22:18:06.69 [12920:11300:1129/221806.692:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 29, 2018 22:18:06.69 [12920:11300:1129/221806.692:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 29, 2018 22:18:09.38 [10652:2756:1129/221809.386:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4215)] NOT IMPLEMENTED
+11月 29, 2018 22:18:21.91 [12068:284:1129/221821.917:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 29, 2018 22:18:21.91 [12068:284:1129/221821.917:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 29, 2018 22:18:21.91 [12068:284:1129/221821.917:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 29, 2018 22:18:21.91 [12068:284:1129/221821.917:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 29, 2018 22:18:21.91 [12068:284:1129/221821.917:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 29, 2018 22:18:34.60 [12068:284:1129/221834.603:ERROR:CONSOLE(36)] "Uncaught TypeError: Cannot read property 'displayName' of undefined", source: chrome://settings/lazy_load.crisper.js (36)
+11月 29, 2018 22:18:34.60 [12068:284:1129/221834.603:ERROR:CONSOLE(36)] "Uncaught TypeError: Cannot read property 'displayName' of undefined", source: chrome://settings/lazy_load.crisper.js (36)
+11月 29, 2018 22:18:44.03 [16032:14936:1129/221844.032:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 29, 2018 22:18:44.03 [16032:14936:1129/221844.032:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 29, 2018 22:18:44.03 [16032:14936:1129/221844.032:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 29, 2018 22:18:44.03 [16032:14936:1129/221844.032:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 29, 2018 22:18:44.03 [16032:14936:1129/221844.032:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 29, 2018 22:46:30.89 [15116:12844:1129/224630.898:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 29, 2018 22:46:30.89 [15116:12844:1129/224630.898:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 29, 2018 22:46:30.89 [15116:12844:1129/224630.898:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 29, 2018 22:46:30.89 [15116:12844:1129/224630.898:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 29, 2018 22:46:30.89 [15116:12844:1129/224630.898:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 29, 2018 22:46:46.57 [15116:12844:1129/224646.572:ERROR:CONSOLE(36)] "Uncaught TypeError: Cannot read property 'displayName' of undefined", source: chrome://settings/lazy_load.crisper.js (36)
+11月 29, 2018 22:46:46.57 [15116:12844:1129/224646.572:ERROR:CONSOLE(36)] "Uncaught TypeError: Cannot read property 'displayName' of undefined", source: chrome://settings/lazy_load.crisper.js (36)
+11月 29, 2018 22:46:55.44 [1752:12304:1129/224655.446:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 29, 2018 22:46:55.44 [1752:12304:1129/224655.446:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 29, 2018 22:46:55.44 [1752:12304:1129/224655.446:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 29, 2018 22:46:55.44 [1752:12304:1129/224655.446:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 29, 2018 22:46:55.44 [1752:12304:1129/224655.446:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+
+11月 30, 2018 09:21:23.43 NEW SESSION
+11月 30, 2018 09:21:23.43 [8152:9068:1130/092123.430:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 30, 2018 09:21:23.45 [8152:9068:1130/092123.430:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 30, 2018 09:21:23.45 [8152:9068:1130/092123.430:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 30, 2018 09:21:23.45 [8152:9068:1130/092123.430:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 30, 2018 09:21:23.45 [8152:9068:1130/092123.430:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+11月 30, 2018 10:08:42.22 [8152:10204:1130/100842.222:ERROR:ssl_client_socket_impl.cc(1013)] handshake failed; returned -1, SSL error code 1, net_error -101
+11月 30, 2018 10:08:42.26 [8152:10204:1130/100842.261:ERROR:ssl_client_socket_impl.cc(1013)] handshake failed; returned -1, SSL error code 1, net_error -101
+11月 30, 2018 10:56:04.24 [12044:12160:1130/105604.245:ERROR:broker_win.cc(137)] Error sending sync broker message: Error (0x5) while retrieving error. (0xE8)
+11月 30, 2018 10:56:04.24 [5332:10964:1130/105604.248:ERROR:broker_win.cc(137)] Error sending sync broker message: Error (0x5) while retrieving error. (0xE8)
+11月 30, 2018 10:56:04.26 [5332:10964:1130/105604.268:ERROR:broker_win.cc(137)] Error sending sync broker message: Error (0x3B01) while retrieving error. (0xE8)
+
+12月 01, 2018 09:48:57.39 NEW SESSION
+12月 01, 2018 09:48:57.39 [2096:8564:1201/094857.219:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12月 01, 2018 09:48:57.42 [2096:8564:1201/094857.220:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12月 01, 2018 09:48:57.42 [2096:8564:1201/094857.220:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12月 01, 2018 09:48:57.42 [2096:8564:1201/094857.220:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12月 01, 2018 09:48:57.42 [2096:8564:1201/094857.220:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12月 01, 2018 09:51:17.06 [10272:10768:1201/095117.060:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12月 01, 2018 09:51:17.06 [10272:10768:1201/095117.060:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12月 01, 2018 09:51:17.06 [10272:10768:1201/095117.060:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12月 01, 2018 09:51:17.06 [10272:10768:1201/095117.060:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12月 01, 2018 09:51:17.06 [10272:10768:1201/095117.060:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+
+12月 09, 2018 15:03:07.89 NEW SESSION
+12月 09, 2018 15:03:07.89 [5024:12348:1209/150307.878:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12月 09, 2018 15:03:07.89 [5024:12348:1209/150307.878:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12月 09, 2018 15:03:07.91 [5024:12348:1209/150307.878:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12月 09, 2018 15:03:07.91 [5024:12348:1209/150307.878:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12月 09, 2018 15:03:07.91 [5024:12348:1209/150307.878:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12月 09, 2018 15:03:11.71 [9136:8704:1209/150311.711:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4215)] NOT IMPLEMENTED
+12月 09, 2018 15:07:06.75 [11648:7800:1209/150706.751:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12月 09, 2018 15:07:06.75 [11648:7800:1209/150706.751:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12月 09, 2018 15:07:06.75 [11648:7800:1209/150706.751:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12月 09, 2018 15:07:06.75 [11648:7800:1209/150706.751:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12月 09, 2018 15:07:06.75 [11648:7800:1209/150706.751:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12月 09, 2018 15:07:29.43 [4428:1524:1209/150729.434:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4215)] NOT IMPLEMENTED
+12月 09, 2018 15:10:23.18 [12232:12312:1209/151023.180:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12月 09, 2018 15:10:23.18 [12232:12312:1209/151023.180:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12月 09, 2018 15:10:23.18 [12232:12312:1209/151023.180:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12月 09, 2018 15:10:23.18 [12232:12312:1209/151023.180:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12月 09, 2018 15:10:23.18 [12232:12312:1209/151023.180:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12月 09, 2018 15:10:27.19 [9376:2432:1209/151027.190:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4215)] NOT IMPLEMENTED
+12月 09, 2018 15:11:54.94 [11560:12896:1209/151154.949:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12月 09, 2018 15:11:54.94 [11560:12896:1209/151154.949:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12月 09, 2018 15:11:54.94 [11560:12896:1209/151154.949:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12月 09, 2018 15:11:54.94 [11560:12896:1209/151154.949:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12月 09, 2018 15:11:54.94 [11560:12896:1209/151154.949:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12月 09, 2018 15:20:54.49 [8908:7244:1209/152054.495:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4215)] NOT IMPLEMENTED
+12月 09, 2018 15:21:02.61 [2096:7888:1209/152102.619:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12月 09, 2018 15:21:02.61 [2096:7888:1209/152102.619:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12月 09, 2018 15:21:02.61 [2096:7888:1209/152102.619:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12月 09, 2018 15:21:02.61 [2096:7888:1209/152102.619:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12月 09, 2018 15:21:02.61 [2096:7888:1209/152102.619:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12月 09, 2018 15:40:30.92 [8648:2644:1209/154030.919:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4215)] NOT IMPLEMENTED
+12月 09, 2018 15:47:34.09 [1260:12396:1209/154734.090:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12月 09, 2018 15:47:34.09 [1260:12396:1209/154734.090:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12月 09, 2018 15:47:34.09 [1260:12396:1209/154734.090:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12月 09, 2018 15:47:34.09 [1260:12396:1209/154734.090:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12月 09, 2018 15:47:34.09 [1260:12396:1209/154734.090:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12月 09, 2018 15:48:27.26 [2948:5980:1209/154827.264:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4215)] NOT IMPLEMENTED
+
+12月 09, 2018 15:53:30.87 NEW SESSION
+12月 09, 2018 15:53:30.87 [10264:12004:1209/155330.867:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12月 09, 2018 15:53:30.87 [10264:12004:1209/155330.867:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12月 09, 2018 15:53:30.87 [10264:12004:1209/155330.867:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12月 09, 2018 15:53:30.87 [10264:12004:1209/155330.867:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12月 09, 2018 15:53:30.87 [10264:12004:1209/155330.867:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+
+1月 12, 2019 17:42:31.61 NEW SESSION
+1月 12, 2019 17:42:31.62 [10108:5204:0112/174231.617:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4215)] NOT IMPLEMENTED
+
+2月 08, 2019 10:48:44.57 NEW SESSION
+2月 08, 2019 10:48:44.57 [10500:8500:0208/104844.554:ERROR:connection_factory_impl.cc(408)] Failed to connect to MCS endpoint with error -106
+2月 08, 2019 10:48:44.59 [10500:8500:0208/104844.554:ERROR:checkin_request.cc(219)] Failed to get checkin response. Fetcher failed. Retrying.
+2月 08, 2019 10:48:46.06 [6756:10456:0208/104846.068:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4215)] NOT IMPLEMENTED
+
+2月 08, 2019 10:53:42.89 NEW SESSION
+2月 08, 2019 10:53:42.89 [2116:1864:0208/105342.889:ERROR:connection_factory_impl.cc(408)] Failed to connect to MCS endpoint with error -106
+2月 08, 2019 10:53:42.89 [2116:1864:0208/105342.890:ERROR:checkin_request.cc(219)] Failed to get checkin response. Fetcher failed. Retrying.
+2月 08, 2019 10:53:56.26 [8932:9272:0208/105356.259:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4215)] NOT IMPLEMENTED
+2月 08, 2019 10:56:03.68 [10744:3564:0208/105603.685:ERROR:connection_factory_impl.cc(408)] Failed to connect to MCS endpoint with error -106
+2月 08, 2019 10:56:03.71 [10744:3564:0208/105603.710:ERROR:checkin_request.cc(219)] Failed to get checkin response. Fetcher failed. Retrying.
+2月 08, 2019 10:56:30.22 [10744:3564:0208/105630.224:ERROR:connection_factory_impl.cc(408)] Failed to connect to MCS endpoint with error -106
+2月 08, 2019 10:56:31.42 [10744:3564:0208/105631.428:ERROR:checkin_request.cc(219)] Failed to get checkin response. Fetcher failed. Retrying.
+2月 08, 2019 10:56:33.44 [12156:10956:0208/105633.445:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4215)] NOT IMPLEMENTED
+
+2月 08, 2019 11:03:18.73 NEW SESSION
+2月 08, 2019 11:03:18.73 [11524:2020:0208/110318.731:ERROR:connection_factory_impl.cc(408)] Failed to connect to MCS endpoint with error -106
+2月 08, 2019 11:03:18.73 [11524:2020:0208/110318.732:ERROR:checkin_request.cc(219)] Failed to get checkin response. Fetcher failed. Retrying.
+2月 08, 2019 11:03:20.38 [6452:3280:0208/110320.380:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4215)] NOT IMPLEMENTED
+
+2月 08, 2019 11:06:44.15 NEW SESSION
+2月 08, 2019 11:06:44.15 [1864:3872:0208/110644.151:ERROR:connection_factory_impl.cc(408)] Failed to connect to MCS endpoint with error -106
+2月 08, 2019 11:06:44.15 [1864:3872:0208/110644.152:ERROR:checkin_request.cc(219)] Failed to get checkin response. Fetcher failed. Retrying.
+2月 08, 2019 11:07:06.35 [1864:3872:0208/110706.355:ERROR:checkin_request.cc(219)] Failed to get checkin response. Fetcher failed. Retrying.
+2月 08, 2019 11:07:06.94 [1864:3872:0208/110706.942:ERROR:connection_factory_impl.cc(408)] Failed to connect to MCS endpoint with error -106
+2月 08, 2019 11:07:52.51 [1864:3872:0208/110752.515:ERROR:checkin_request.cc(219)] Failed to get checkin response. Fetcher failed. Retrying.
+2月 08, 2019 11:07:57.73 [1864:3872:0208/110757.732:ERROR:connection_factory_impl.cc(408)] Failed to connect to MCS endpoint with error -106
+2月 08, 2019 11:09:13.53 [1864:3872:0208/110913.537:ERROR:checkin_request.cc(219)] Failed to get checkin response. Fetcher failed. Retrying.
+2月 08, 2019 11:09:56.99 [1864:3872:0208/110956.997:ERROR:connection_factory_impl.cc(408)] Failed to connect to MCS endpoint with error -106
+2月 08, 2019 11:12:04.37 [1864:3872:0208/111204.378:ERROR:checkin_request.cc(219)] Failed to get checkin response. Fetcher failed. Retrying.
+2月 08, 2019 11:13:44.18 [1864:3872:0208/111344.186:ERROR:connection_factory_impl.cc(408)] Failed to connect to MCS endpoint with error -106
+2月 08, 2019 11:14:07.94 [1864:8508:0208/111407.945:ERROR:gcm_channel_status_request.cc(151)] GCM channel request failed.
+2月 08, 2019 11:14:37.55 [1864:8508:0208/111437.553:ERROR:gcm_channel_status_request.cc(151)] GCM channel request failed.
+2月 08, 2019 11:15:28.40 [4948:4696:0208/111528.403:ERROR:connection_factory_impl.cc(408)] Failed to connect to MCS endpoint with error -106
+2月 08, 2019 11:15:28.40 [4948:4696:0208/111528.408:ERROR:checkin_request.cc(219)] Failed to get checkin response. Fetcher failed. Retrying.
+2月 08, 2019 11:15:37.07 [4948:11312:0208/111537.073:ERROR:CONSOLE(622)] "This must be a file URL.", source: chrome-devtools://devtools/bundled/shell.js (622)
+2月 08, 2019 11:15:40.60 [4948:11312:0208/111540.609:ERROR:CONSOLE(622)] "This must be a file URL.", source: chrome-devtools://devtools/bundled/shell.js (622)
+2月 08, 2019 11:15:42.81 [4948:11312:0208/111542.817:ERROR:CONSOLE(622)] "This must be a file URL.", source: chrome-devtools://devtools/bundled/shell.js (622)
+2月 08, 2019 11:15:45.55 [4948:11312:0208/111545.553:ERROR:CONSOLE(622)] "This must be a file URL.", source: chrome-devtools://devtools/bundled/shell.js (622)
+2月 08, 2019 11:15:53.55 [4948:4696:0208/111553.556:ERROR:checkin_request.cc(219)] Failed to get checkin response. Fetcher failed. Retrying.
+2月 08, 2019 11:15:54.00 [4948:4696:0208/111554.003:ERROR:connection_factory_impl.cc(408)] Failed to connect to MCS endpoint with error -106
+
+2月 08, 2019 11:18:10.57 NEW SESSION
+2月 08, 2019 11:18:10.57 [10120:972:0208/111810.575:ERROR:connection_factory_impl.cc(408)] Failed to connect to MCS endpoint with error -106
+2月 08, 2019 11:18:10.58 [10120:972:0208/111810.580:ERROR:checkin_request.cc(219)] Failed to get checkin response. Fetcher failed. Retrying.
+2月 08, 2019 11:18:28.94 [10120:3992:0208/111828.949:ERROR:CONSOLE(36)] "Uncaught TypeError: Cannot read property 'displayName' of undefined", source: chrome://settings/lazy_load.crisper.js (36)
+2月 08, 2019 11:18:28.94 [10120:3992:0208/111828.949:ERROR:CONSOLE(36)] "Uncaught TypeError: Cannot read property 'displayName' of undefined", source: chrome://settings/lazy_load.crisper.js (36)
+2月 08, 2019 11:18:34.21 [10804:11392:0208/111834.217:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4215)] NOT IMPLEMENTED
+2月 08, 2019 11:18:43.61 [4024:2136:0208/111843.617:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4215)] NOT IMPLEMENTED
+2月 08, 2019 11:19:48.98 [12188:11856:0208/111948.948:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4215)] NOT IMPLEMENTED
+2月 08, 2019 11:19:59.21 [4820:11844:0208/111959.217:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4215)] NOT IMPLEMENTED
+2月 08, 2019 11:20:26.38 [9316:11444:0208/112026.386:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4215)] NOT IMPLEMENTED
+2月 08, 2019 11:21:12.87 [1944:6904:0208/112112.878:ERROR:CONSOLE(36)] "Uncaught TypeError: Cannot read property 'displayName' of undefined", source: chrome://settings/lazy_load.crisper.js (36)
+2月 08, 2019 11:21:12.88 [1944:6904:0208/112112.879:ERROR:CONSOLE(36)] "Uncaught TypeError: Cannot read property 'displayName' of undefined", source: chrome://settings/lazy_load.crisper.js (36)
+2月 08, 2019 11:21:15.15 [5868:6024:0208/112115.154:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4215)] NOT IMPLEMENTED
+2月 08, 2019 11:30:21.01 [Parent 9144, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+2月 08, 2019 11:30:21.01 [Child 7032, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+2月 08, 2019 11:30:21.01 [Child 7032, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+2月 08, 2019 11:30:45.70 [Parent 9144, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+2月 08, 2019 11:30:45.70 [Child 11312, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+2月 08, 2019 11:30:45.70 [Child 11312, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+2月 08, 2019 11:30:50.78 [Parent 9144, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+2月 08, 2019 11:30:50.78 [Child 11124, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+2月 08, 2019 11:30:50.78 [Child 11124, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+2月 08, 2019 11:30:51.57 [Parent 9144, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+2月 08, 2019 11:30:51.57 [Child 4460, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+2月 08, 2019 11:30:51.60 [Child 4460, Chrome_ChildThread] WARNING: pipe err[Child 10824, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+2月 08, 2019 11:30:51.60 [Child 10824, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+2月 08, 2019 11:30:51.61 [Parent 9144, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+2月 08, 2019 11:30:51.61 [Child 6248, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+2月 08, 2019 11:30:51.80 [Child 6248, Chrome_ChildThrea[G
+2月 08, 2019 11:30:51.80 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+2月 08, 2019 11:30:51.80 
+2月 08, 2019 11:30:51.80 PU 4772, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+2月 08, 2019 11:30:51.83 
+2月 08, 2019 11:30:51.83 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+2月 08, 2019 11:30:51.83 
+2月 08, 2019 11:31:09.37 [Parent 9524, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+2月 08, 2019 11:31:09.38 [Child 8572, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+2月 08, 2019 11:31:26.83 [Child 8572, Chrome_ChildThread] WA[Parent 9524, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+2月 08, 2019 11:31:26.83 [Parent 9524, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+2月 08, 2019 11:31:26.83 [Child 5256, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+2月 08, 2019 11:31:26.83 [Child 5256, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+2月 08, 2019 11:31:26.83 [Child 6752, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+2月 08, 2019 11:31:26.85 [Child 8612, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+2月 08, 2019 11:31:26.85 [Child 8612, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/[Parent 9524, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+2月 08, 2019 11:31:26.85 [Child 10412, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+2月 08, 2019 11:31:27.03 [Child 10412, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/co
+2月 08, 2019 11:31:27.03 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+2月 08, 2019 11:31:27.03 
+2月 08, 2019 11:31:27.03 [GPU 10932, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+2月 08, 2019 11:31:27.05 
+2月 08, 2019 11:31:27.05 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+2月 08, 2019 11:31:27.05 
+2月 08, 2019 11:31:36.08 [Parent 11592, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+2月 08, 2019 11:31:36.08 [Child 2696, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+2月 08, 2019 11:31:46.23 [Child 2696, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/[Parent 11592, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+2月 08, 2019 11:31:46.23 [Child 8604, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+2月 08, 2019 11:32:01.67 [Child 8604, Chrome_ChildThread] WARNING: pipe error: 109: file z:/b[Parent 11592, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+2月 08, 2019 11:32:01.67 [Child 2036, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+2月 08, 2019 11:32:01.68 [Child 2036, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line[Child 9596, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+2月 08, 2019 11:32:01.68 [Child 9596, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+2月 08, 2019 11:32:01.69 [Parent 11592, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+2月 08, 2019 11:32:01.70 [Parent 11592, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+2月 08, 2019 11:32:01.86 
+2月 08, 2019 11:32:01.86 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+2月 08, 2019 11:32:01.86 
+2月 08, 2019 11:32:01.86 [GPU 3788, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+2月 08, 2019 11:32:01.88 
+2月 08, 2019 11:32:01.88 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+2月 08, 2019 11:32:01.89 
+2月 08, 2019 11:35:09.67 [Parent 5532, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+2月 08, 2019 11:35:09.67 [Child 7332, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+2月 08, 2019 11:46:47.14 [Child 7332, Chrome_ChildThread] WARNING: pipe error:[Child 10932, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+2月 08, 2019 11:46:47.14 [Child 10932, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+2月 08, 2019 11:58:25.11 [Child 11088, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+2月 08, 2019 11:58:25.13 [Child 11088, Chrome_ChildThread] WIPDL protocol error: Handler returned error code!
+2月 08, 2019 11:58:25.13 
+2月 08, 2019 11:58:25.13 ###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+2月 08, 2019 11:58:25.13 
+2月 08, 2019 11:58:25.13 IPDL protocol error: Handler returned error code!
+2月 08, 2019 11:58:25.13 
+2月 08, 2019 11:58:25.13 ###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+2月 08, 2019 11:58:25.13 
+2月 08, 2019 11:58:25.13 IPDL protocol error: Handler returned error code!
+2月 08, 2019 11:58:25.13 
+2月 08, 2019 11:58:25.13 ###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+2月 08, 2019 11:58:25.13 
+2月 08, 2019 11:58:25.13 IPDL protocol error: Handler returned error code!
+2月 08, 2019 11:58:25.13 
+2月 08, 2019 11:58:25.13 ###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+2月 08, 2019 11:58:25.13 
+2月 08, 2019 11:58:25.13 IPDL protocol error: Handler returned error code!
+2月 08, 2019 11:58:25.13 
+2月 08, 2019 11:58:25.13 ###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+2月 08, 2019 11:58:25.14 
+2月 08, 2019 11:58:25.15 [Child 10364, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+2月 08, 2019 11:58:25.15 [Child 10364, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+2月 08, 2019 11:58:25.23 
+2月 08, 2019 11:58:25.23 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+2月 08, 2019 11:58:25.23 
+2月 08, 2019 11:58:25.27 [GPU 2192, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/c
+2月 08, 2019 11:58:25.27 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+2月 08, 2019 11:58:25.27 
+
+2月 13, 2019 16:21:25.71 NEW SESSION
+2月 13, 2019 16:21:25.71 [Child 8420, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+2月 13, 2019 16:21:25.81 [Child 8420, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/commo[Parent 9248, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+2月 13, 2019 16:21:25.81 [Child 8328, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+2月 13, 2019 16:21:25.81 [Child 8328, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/i[Child 6028, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+2月 13, 2019 16:21:25.81 [Child 6028, Chrome_ChildThread] WARNING: pipe error: 109: file z:/b[Child 2152, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+2月 13, 2019 16:21:25.81 [Child 2152, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+2月 13, 2019 16:21:26.19 
+2月 13, 2019 16:21:26.19 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+2月 13, 2019 16:21:26.19 

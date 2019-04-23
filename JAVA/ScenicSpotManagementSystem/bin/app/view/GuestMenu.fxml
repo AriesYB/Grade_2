@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.view.GuestMenuController">
+   <children>
+      <AnchorPane fx:id="mainPane_1" prefHeight="700.0" prefWidth="998.0">
+         <children>
+            <AnchorPane fx:id="tablePane" layoutX="14.0" layoutY="108.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="484.0" prefWidth="412.0">
+               <children>
+                  <TableView fx:id="tableView" layoutX="2.0" prefHeight="483.0" prefWidth="406.0" AnchorPane.rightAnchor="3.6000000000000227">
+                    <columns>
+                      <TableColumn fx:id="placeColumn" editable="false" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="147.20000839233398" sortable="false" text="景点" />
+                      <TableColumn fx:id="adjPlaceColumn" editable="false" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="257.59999084472656" sortable="false" text="能到达的景区" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+            <JFXTextField fx:id="search_content" focusColor="#2c61ff" layoutX="212.0" layoutY="65.0" onMousePressed="#cleanSearch" prefHeight="31.0" prefWidth="126.0" unFocusColor="#4d4d4dcc" />
+            <JFXButton fx:id="search_butn" layoutX="355.0" layoutY="65.0" onAction="#searchPlace_1" prefHeight="31.0" prefWidth="70.0" style="-fx-background-color: #bfbfbf; -fx-cursor: hand; -fx-border-color: white;" text="搜索" />
+            <AnchorPane fx:id="mainPane_2" layoutX="428.0" layoutY="109.0">
+               <children>
+                  <AnchorPane fx:id="pane_1" prefHeight="590.0" prefWidth="570.0" style="-fx-background-color: #ffffff;">
+                     <children>
+                        <Text fx:id="placeName" layoutX="91.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="94.30029296875">
+                           <font>
+                              <Font name="KaiTi" size="21.0" />
+                           </font>
+                        </Text>
+                        <TextArea fx:id="placeIntroduction" editable="false" layoutY="156.0" prefHeight="413.0" prefWidth="570.0" wrapText="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextArea>
+                        <Text fx:id="popularity" layoutX="276.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" " wrappingWidth="119.19999122619623">
+                           <font>
+                              <Font name="KaiTi" size="21.0" />
+                           </font>
+                        </Text>
+                        <Label layoutY="3.0" text="景区名称：" textFill="#9c9c9c">
+                           <font>
+                              <Font name="KaiTi" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="222.0" layoutY="1.0" text="人气：" textFill="#9c9c9c">
+                           <font>
+                              <Font name="KaiTi" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label layoutY="114.0" text="简介：" textFill="#9c9c9c">
+                           <font>
+                              <Font name="KaiTi" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label layoutY="60.0" text="有无休息区：" textFill="#9c9c9c">
+                           <font>
+                              <Font name="KaiTi" size="21.0" />
+                           </font>
+                        </Label>
+                        <Text fx:id="hasRestArea" layoutX="111.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="29.30029296875">
+                           <font>
+                              <Font name="KaiTi" size="21.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="hasToilet" layoutX="276.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="29.30029296875">
+                           <font>
+                              <Font name="KaiTi" size="21.0" />
+                           </font>
+                        </Text>
+                        <Label layoutX="185.0" layoutY="60.0" text="有无厕所：" textFill="#9c9c9c">
+                           <font>
+                              <Font name="KaiTi" size="21.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="pane_2" layoutX="428.0" layoutY="109.0" prefHeight="590.0" prefWidth="570.0" style="-fx-background-color: #ffffff;" visible="false">
+               <children>
+                  <JFXButton fx:id="butn_1" layoutX="146.0" layoutY="133.0" onAction="#setText_1" prefHeight="31.0" prefWidth="94.0" style="-fx-background-color: #bfbfbf; -fx-cursor: hand;" text="选择" textFill="#2b2929" />
+                  <TextField fx:id="text_1" editable="false" layoutX="146.0" layoutY="81.0" prefHeight="31.0" prefWidth="94.0" promptText="起点" />
+                  <JFXButton fx:id="butn_2" layoutX="300.0" layoutY="132.0" onAction="#setText_2" prefHeight="31.0" prefWidth="94.0" style="-fx-background-color: #bfbfbf; -fx-cursor: hand;" text="选择" textFill="#2b2929" />
+                  <TextField fx:id="text_2" editable="false" layoutX="300.0" layoutY="81.0" prefHeight="31.0" prefWidth="94.0" promptText="终点" />
+                  <TextArea fx:id="textPath" layoutX="70.0" layoutY="200.0" prefHeight="210.0" prefWidth="388.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="pane_3" layoutX="428.0" layoutY="109.0" prefHeight="590.0" prefWidth="570.0" style="-fx-background-color: #ffffff;" visible="false">
+               <children>
+                  <JFXButton fx:id="butn_3" layoutX="292.0" layoutY="35.0" onAction="#setText_3" prefHeight="31.0" prefWidth="94.0" style="-fx-background-color: #bfbfbf; -fx-cursor: hand;" text="选择" textFill="#2b2929" />
+                  <TextField fx:id="text_3" editable="false" layoutX="163.0" layoutY="35.0" prefHeight="31.0" prefWidth="94.0" promptText="选择起点" />
+                  <TextArea fx:id="textPath1" layoutX="77.0" layoutY="102.0" prefHeight="330.0" prefWidth="450.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="pane_4" layoutX="428.0" layoutY="109.0" prefHeight="590.0" prefWidth="570.0" style="-fx-background-color: #ffffff;" visible="false">
+               <children>
+                  <JFXButton fx:id="butn_4" layoutX="206.0" layoutY="53.0" onAction="#setText_4" prefHeight="31.0" prefWidth="63.0" style="-fx-background-color: #bfbfbf; -fx-cursor: hand;" text="确定" textFill="#2b2929" />
+                  <TextField fx:id="text_4" layoutX="64.0" layoutY="53.0" onMouseClicked="#clearn" prefHeight="31.0" prefWidth="119.0" promptText="输入车牌号" />
+                  <JFXRadioButton fx:id="select_1" layoutX="64.0" layoutY="101.0" onAction="#select_1" text="停车" />
+                  <JFXRadioButton fx:id="select_2" layoutX="139.0" layoutY="101.0" onAction="#select_2" text="取车" />
+                  <Label fx:id="label_car" layoutX="68.0" layoutY="160.0" prefHeight="31.0" prefWidth="63.0" text="停车位:" visible="false">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Text fx:id="text_5" layoutX="136.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="94.30029429495335">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="label_time" layoutX="69.0" layoutY="195.0" prefHeight="31.0" prefWidth="78.0" text="计费时间:" visible="false">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Text fx:id="text_6" layoutX="145.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="193.5003065019846">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="label_fee" layoutX="69.0" layoutY="245.0" prefHeight="31.0" prefWidth="78.0" text="当前费用:" visible="false">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Text fx:id="text_7" layoutX="144.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="94.30029429495335">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="label_allTime" layoutX="246.0" layoutY="245.0" prefHeight="31.0" prefWidth="78.0" text="停车时间:" visible="false">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Text fx:id="text_8" layoutX="324.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="119.19999122619629">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <Label layoutX="237.0" layoutY="14.0" prefHeight="30.0" prefWidth="38.0" text="公告:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="label_nowTime" layoutX="39.0" layoutY="656.0" prefHeight="31.0" prefWidth="172.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="text_announcement" editable="false" layoutX="286.0" layoutY="14.0" prefHeight="30.0" prefWidth="372.0" style="-fx-background-color: #ece9e9;">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <JFXComboBox fx:id="combobox" focusColor="#405aa800" layoutX="20.0" layoutY="73.0" prefHeight="23.0" prefWidth="88.0" style="-fx-cursor: hand;" unFocusColor="#4d4d4d00" />
+            <JFXButton layoutX="109.0" layoutY="73.0" onAction="#sort" prefHeight="23.0" prefWidth="56.0" style="-fx-background-color: #bfbfbf; -fx-cursor: hand;" text="排序" textFill="#2b2929" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="menuPane" layoutX="850.0" prefHeight="234.0" prefWidth="150.0" stylesheets="@../../../resources/css/GuestMenu.css" visible="false">
+         <children>
+            <JFXButton fx:id="button_1" disable="true" layoutY="50.0" onAction="#menu_1" prefHeight="52.0" prefWidth="150.0" stylesheets="@../../../resources/css/GuestMenu.css" text="景区查询">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="button_2" layoutY="102.0" onAction="#menu_2" prefHeight="52.0" prefWidth="150.0" stylesheets="@../../../resources/css/GuestMenu.css" text="查找最短路径">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="button_3" layoutY="152.0" onAction="#menu_3" prefHeight="52.0" prefWidth="150.0" stylesheets="@../../../resources/css/GuestMenu.css" text="导游路线">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="button_4" layoutY="206.0" onAction="#menu_4" prefHeight="52.0" prefWidth="150.0" stylesheets="@../../../resources/css/GuestMenu.css" text="车辆信息">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <JFXHamburger fx:id="hamburger" layoutX="955.0" layoutY="7.0" prefHeight="30.0" prefWidth="38.0" stylesheets="@../../../resources/css/GuestMenu.css" />
+      <AnchorPane fx:id="pane_butn" layoutY="1.0" onMouseClicked="#backToMain" onMousePressed="#setPressedColor" onMouseReleased="#setReleasedColor" prefHeight="30.0" prefWidth="46.0" stylesheets="@../../../resources/css/AdminCheck.css">
+         <children>
+            <Line fx:id="line_1" endX="-80.0" endY="10.0" fill="BLACK" layoutX="100.0" layoutY="15.0" startX="-90.0" styleClass="line" />
+            <Line fx:id="line_2" endX="-80.0" endY="-10.0" layoutX="100.0" layoutY="15.0" startX="-90.0" styleClass="line" />
+            <Line fx:id="line_3" endX="-70.39998626708984" endY="-7.62939453125E-6" layoutX="100.0" layoutY="15.0" startX="-90.0" styleClass="line" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,272 @@
+package app;
+
+import java.io.IOException;
+import java.util.Stack;
+
+import com.jfoenix.controls.JFXTabPane;
+
+import app.view.FindMusicController;
+import app.view.LocalMusicController;
+import app.view.MainLayoutController;
+import app.view.RootLayoutController;
+import app.view.SetController;
+import javafx.application.Application;
+import javafx.collections.ListChangeListener;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Scene;
+import javafx.scene.image.Image;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.Pane;
+import javafx.scene.layout.StackPane;
+import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
+
+public class MainApp extends Application {
+
+	private Stage primaryStage;
+	private StackPane stackPane;// 中间的部分
+	private AnchorPane mainPane;// 中间右边的部分
+	private AnchorPane setPage;
+	private AnchorPane localMusicPage;
+	private JFXTabPane findMusic;
+	private Node lastPage;
+	private Stack<Node> formerPage = new Stack<Node>();// 当前页面之前的记录
+	private Stack<Node> latterPage = new Stack<Node>();// 当前页面之后的记录
+	private boolean isNew = true;// 当前是否打开新页面而非显示历史记录
+	private RootLayoutController rootController;
+
+	/**
+	 * 初始布局
+	 */
+	private void initRootLayout() {
+		try {
+			// 加载RootLayout
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(MainApp.class.getResource("view/RootLayout.fxml"));
+			VBox rootLayout = (VBox) loader.load();
+			RootLayoutController controller = loader.getController();
+			controller.setMainApp(this);
+			rootController = controller;
+			stackPane = (StackPane) rootLayout.getChildren().get(1);
+
+			// 加载MainLayout
+			FXMLLoader loader1 = new FXMLLoader();
+			loader1.setLocation(MainApp.class.getResource("view/MainLayout.fxml"));
+			BorderPane mainLayout = loader1.load();
+			MainLayoutController controller1 = loader1.getController();
+			controller1.setMainApp(this);
+			mainPane = (AnchorPane) mainLayout.getCenter();
+			stackPane.getChildren().add(mainLayout);
+
+			stackPane.getChildren().addListener(new ListChangeListener<Node>() {// 添加页面监听
+
+				@Override
+				public void onChanged(Change<? extends Node> c) {// FIXME 弄清楚 next()
+					if (isNew) {// 如果是新打开的页面
+						if (c.next() && c.wasAdded()) {// stackPane增加页面
+							formerPage.push(lastPage);
+							latterPage.clear();
+							lastPage = stackPane.getChildren().get(1);
+						} else if (c.next() && c.wasRemoved()) {// stackPane减少页面 stackPane减少后显示的一定是mainPane
+							formerPage.push(lastPage);// 当打开时 latterPage已经清空 不必clear
+							lastPage = mainPane.getChildren().get(0);
+						}
+					}
+				}
+			});
+
+			mainPane.getChildren().addListener(new ListChangeListener<Node>() {
+
+				@Override
+				public void onChanged(Change<? extends Node> c) {
+					if (isNew) {
+						if (c.next() && c.wasAdded()) {
+							formerPage.push(lastPage);
+							latterPage.clear();
+							lastPage = mainPane.getChildren().get(0);
+						}
+					}
+				}
+
+			});
+
+			Scene scene = new Scene(rootLayout);
+			primaryStage.setScene(scene);
+			// TODO 需要开启初始页面
+			primaryStage.show();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+	/**
+	 * 切换显示为某个页面
+	 */
+	private void showPage(Node node, Pane pane) {
+		checkStack();
+		if (stackPane.getChildren().size() != 1) {// FIXME 需要优化
+			stackPane.getChildren().remove(setPage);
+		}
+		if (!pane.getChildren().contains(node)) {
+			pane.getChildren().clear();
+			pane.getChildren().add(node);
+		}
+	}
+
+	/**
+	 * 覆盖显示为某个页面
+	 */
+	private void showCoverPage(Node node, Pane pane) {
+		checkStack();
+		if (!pane.getChildren().contains(node)) {
+			pane.getChildren().add(node);
+		}
+	}
+
+	/**
+	 * 退回
+	 */
+	public void back() {
+		isNew = false;
+		Node current = formerPage.pop();
+		latterPage.push(lastPage);
+		if (current.equals(setPage)) {// FIXME 需要分成两种页面 以便于区分
+			showCoverPage(current, stackPane);
+		} else {
+			showPage(current, mainPane);
+		}
+		isNew = true;
+	}
+
+	/**
+	 * 前进
+	 */
+	public void forword() {
+		isNew = false;
+		Node current = latterPage.pop();
+		formerPage.push(lastPage);
+		if (current.equals(setPage)) {// FIXME 需要分成两种页面 以便于区分
+			showCoverPage(current, stackPane);
+		} else {
+			showPage(current, mainPane);
+		}
+		isNew = true;
+	}
+
+	/**
+	 * 返回至首页
+	 */
+	public void backHome() {
+		if (stackPane.getChildren().size() == 2) {
+			stackPane.getChildren().remove(setPage);
+		}
+		showFindMusic();
+	}
+
+	/**
+	 * 发现音乐页面
+	 */
+	public void showFindMusic() {
+		if (findMusic == null) {// setPage未加载过
+			try {
+				FXMLLoader loader = new FXMLLoader();
+				loader.setLocation(MainApp.class.getResource("view/FindMusic.fxml"));
+				findMusic = (JFXTabPane) loader.load();
+				findMusic.setPrefWidth(mainPane.getWidth());
+				findMusic.setPrefHeight(mainPane.getHeight());
+				FindMusicController controller = loader.getController();
+				controller.setMainApp(this);
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+		showPage(findMusic, mainPane);
+	}
+
+	/**
+	 * 设置页面
+	 */
+	public void showSetPage() {
+		if (setPage == null) {// setPage未加载过
+			try {
+				FXMLLoader loader = new FXMLLoader();
+				loader.setLocation(MainApp.class.getResource("view/Set.fxml"));
+				setPage = (AnchorPane) loader.load();
+				setPage.setPrefWidth(stackPane.getWidth());
+				setPage.setPrefHeight(stackPane.getHeight());
+				SetController controller = loader.getController();
+				controller.setMainApp(this);
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+		showCoverPage(setPage, stackPane);
+	}
+
+	/**
+	 * 退出设置页面
+	 */
+	public void backFromSet() {
+		if (stackPane.getChildren().contains(setPage)) {
+			stackPane.getChildren().remove(setPage);
+		}
+	}
+
+	/**
+	 * 本地音乐页面
+	 */
+	public void showLocalMusicPage() {
+		if (localMusicPage == null) {
+			try {
+				FXMLLoader loader = new FXMLLoader();
+				loader.setLocation(MainApp.class.getResource("view/LocalMusic.fxml"));
+				localMusicPage = (AnchorPane) loader.load();
+				localMusicPage.setPrefWidth(mainPane.getWidth());
+				localMusicPage.setPrefHeight(mainPane.getHeight());
+				LocalMusicController controller = loader.getController();
+				controller.setMainApp(this);
+
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+		showPage(lastPage, mainPane);
+	}
+
+	/**
+	 * 检查栈是否为空
+	 */
+	private void checkStack() {
+		if (formerPage.isEmpty()) {
+			rootController.changeBack(true);
+		} else {
+			rootController.changeBack(false);
+		}
+		if (latterPage.isEmpty()) {
+			rootController.changeForword(true);
+		} else {
+			rootController.changeForword(false);
+		}
+	}
+
+	/**
+	 * 应用入口
+	 */
+	@Override
+	public void start(Stage primaryStage) throws Exception {
+		this.primaryStage = primaryStage;
+		this.primaryStage.setTitle("Music");
+		this.primaryStage.getIcons().add(new Image("file:resources/img/icon.png"));
+//		this.primaryStage.initStyle(StageStyle.UNIFIED);FIXME 阴影效果
+		initRootLayout();
+	}
+
+	/**
+	 * 主函数
+	 */
+	public static void main(String[] args) {
+		launch(args);
+	}
+}

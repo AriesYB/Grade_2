@@ -1,0 +1,164 @@
+package com.huawei;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
+public class Road {
+
+	private int id;// 道路id
+	private int length;// 道路长度
+	private int speed;// 最高限速
+	private int channel;// 车道数目
+	private Cross from;// 起点
+	private Cross to;// 终点
+	private boolean isDuplex;// 是否双向
+	private Map<Integer, ArrayList<Car>> channels;// 所有的车道
+	private ArrayList<Car> cars;// 某车道上的车辆
+
+	public Road(int id, int length, int speedMax, int channel, Cross from, Cross to, boolean isDuplex) {
+		super();
+		this.id = id;
+		this.length = length;
+		this.speed = speedMax;
+		this.channel = channel;
+		this.from = from;
+		this.to = to;
+		this.isDuplex = isDuplex;
+		channels = new HashMap<Integer, ArrayList<Car>>();
+		for (int i = 1; i <= channel; i++) {
+			channels.put(i, new ArrayList<Car>());
+		}
+		if (isDuplex) {// 双向
+			for (int i = -1; i >= -channel; i--) {
+				channels.put(i, new ArrayList<Car>());
+			}
+		}
+	}
+
+	public Car getFrontCar(Car car) {// 车前面那辆
+		cars = channels.get(car.getChannel());
+		if (cars.contains(car)) {
+			int i = cars.indexOf(car);
+			if (i + 1 < cars.size()) {
+				return cars.get(i + 1);
+			}
+		}
+		return null;
+	}
+
+	public Cross getFrom(Car car) {
+		cars = channels.get(car.getChannel());
+		if (cars.contains(car)) {
+			if (isDuplex()) {
+				if (car.getChannel() < 0) {
+					return to;
+				} else if (car.getChannel() > 0) {
+					return from;
+				}
+			} else {
+				return from;
+			}
+		}
+		return null;
+	}
+
+	public Cross getTo(Car car) {
+		cars = channels.get(car.getChannel());
+		if (cars.contains(car)) {
+			if (isDuplex()) {
+				if (car.getChannel() < 0) {
+					return from;
+				} else if (car.getChannel() > 0) {
+					return to;
+				}
+			} else {
+				return to;
+			}
+		}
+		return null;
+	}
+
+	public int freeLength(int channel) {
+		cars = channels.get(channel);
+		if (!cars.isEmpty()) {
+			return cars.get(cars.size() - 1).getX() - 1;
+		}
+		return length;
+	}
+
+	public int freeChannel(Cross from) {//从from开始的车道
+		if (this.from.equals(from)) {
+			for (int i = 1; i <= channels.values().size(); i++) {
+				cars = channels.get(i);
+				if (cars.get(cars.size() - 1).getX() >= 2) {
+					return i;
+				}
+			}
+		}else if(this.from.equals(to)){
+			
+		}
+		return -1;
+	}
+
+	public void addCar(Car car, int channel) {
+		if (!channels.get(channel).contains(car)) {
+			channels.get(channel).add(car);
+		}
+	}
+
+	public void removeCar(Car car, int channel) {
+		if (channels.get(channel).contains(car)) {
+			channels.get(channel).remove(car);
+		}
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public int getLength() {
+		return length;
+	}
+
+	public void setLength(int length) {
+		this.length = length;
+	}
+
+	public int getSpeedMax() {
+		return speed;
+	}
+
+	public void setSpeedMax(int speedMax) {
+		this.speed = speedMax;
+	}
+
+	public int getNumber() {
+		return channel;
+	}
+
+	public void setNumber(int number) {
+		this.channel = number;
+	}
+
+	public boolean isDuplex() {
+		return isDuplex;
+	}
+
+	public void addCars(Car car) {
+		cars.add(car);
+	}
+
+	public Map<Integer, ArrayList<Car>> getChannels() {
+		return channels;
+	}
+
+	public Cross getTo() {
+		return to;
+	}
+
+}

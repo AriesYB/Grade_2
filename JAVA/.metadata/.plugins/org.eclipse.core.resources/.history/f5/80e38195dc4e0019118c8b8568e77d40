@@ -1,0 +1,25 @@
+package com.huawei;
+
+import java.util.Collection;
+import java.util.Map;
+
+public class T {
+
+	public static void main(String[] args) {
+		System.read(carPath, roadPath, crossPath);
+		Map a = Util.readCrossInfo("C://Users/管理员/Desktop/cross.txt");
+		Map b = Util.readCarInfo("C://Users/管理员/Desktop/car.txt");
+		Map c = Util.readRoadInfo("C://Users/管理员/Desktop/road.txt");
+		java.lang.System.out.println(a.values());
+		java.lang.System.out.println("-------------------------------");
+		java.lang.System.out.println(b.values());
+		java.lang.System.out.println("-------------------------------");
+		java.lang.System.out.println(c.values());
+		java.lang.System.out.println("-------------------------------");
+		Util.writeAnswerInfo((Collection<Car>) Util.readCrossInfo("C://Users/管理员/Desktop/cross.txt"), "C://Users/管理员/Desktop/answer.txt");
+		java.lang.System.out.println("-------------------------------");
+//		System.launch();
+//		System.write("C://Users/管理员/Desktop/answer.txt");
+	}
+
+}

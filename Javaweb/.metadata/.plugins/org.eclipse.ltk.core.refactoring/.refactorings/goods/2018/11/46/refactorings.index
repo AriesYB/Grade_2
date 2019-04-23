@@ -1,0 +1,21 @@
+1542033032530	Extract local variable 'name'
+1542033109322	Extract local variable 'inputStream'
+1542094515333	Rename type 'DBInfo'
+1542112879682	Delete element
+1542122599409	Move file
+1542122600683	Move file
+1542122602788	Move file
+1542122604122	Move file
+1542122609053	Delete element
+1542164541012	Move folder
+1542166084694	Rename resource 'upload'
+1542180632639	Extract local variable 'attribute'
+1542186190626	Move 'image' to 'jsp'
+1542188388245	Delete element
+1542188415028	Delete element
+1542189008663	Extract local variable 'parameter'
+1542189040976	Extract local variable 'session'
+1542207140029	Delete element
+1542207149644	Move 'login.jsp' to 'jsp'
+1542207378632	Delete element
+1542287008291	Delete element

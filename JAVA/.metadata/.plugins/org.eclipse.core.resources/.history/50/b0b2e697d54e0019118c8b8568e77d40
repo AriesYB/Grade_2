@@ -1,0 +1,104 @@
+package com.huawei;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
+
+public class Util {
+	public static Map<Integer, Car> readCarInfo(String carPath) {
+		Map<Integer, Car> m = new TreeMap<Integer, Car>();
+		ArrayList<String> info = readFile(carPath);
+		for (String string : info) {
+			String[] str = string.split(",");
+			m.put(Integer.parseInt(str[0]),
+					new Car(Integer.parseInt(str[0]), null, null, Integer.parseInt(str[3]), Integer.parseInt(str[4])));
+		}
+		return m;
+	}
+
+	public static Map<Integer, Road> readRoadInfo(String roadPath) {
+		Map<Integer, Road> m = new TreeMap<Integer, Road>();
+		ArrayList<String> info = readFile(roadPath);
+		for (String string : info) {
+			String[] str = string.split(",");
+			boolean flag = Integer.parseInt(str[6]) == 1;
+			m.put(Integer.parseInt(str[0]), new Road(Integer.parseInt(str[0]), Integer.parseInt(str[1]),
+					Integer.parseInt(str[2]), Integer.parseInt(str[3]), null, null, flag));
+		}
+
+		return m;
+	}
+
+	public static Map<Integer, Cross> readCrossInfo(String crossPath) {
+		Map<Integer, Cross> m = new TreeMap<Integer, Cross>();
+		ArrayList<String> info = readFile(crossPath);
+		for (String string : info) {
+			String[] str = string.split(",");
+			m.put(Integer.parseInt(str[0]), new Cross(Integer.parseInt(str[0]), new int[] { Integer.parseInt(str[1]),
+					Integer.parseInt(str[2]), Integer.parseInt(str[3]), Integer.parseInt(str[4]) }));
+		}
+		return m;
+	}
+
+	public static void writeAnswerInfo(Collection<Car> collection, String answerPath) {
+		ArrayList<String> info = new ArrayList<String>();
+		info.add("#(carId,StartTime,RoadId...)");
+		Iterator<Car> it = collection.iterator();
+		while(it.hasNext()) {
+			Car car = it.next();
+			info.add(car.toString());
+		}
+		writeFile(info, answerPath, true);
+	}
+
+	private static ArrayList<String> readFile(String url) {
+		ArrayList<String> a = new ArrayList<String>();
+		FileReader fr = null;
+		BufferedReader bufr = null;
+		try {
+			fr = new FileReader(url);
+			bufr = new BufferedReader(fr);
+			String str = "";
+			while ((str = bufr.readLine()) != null) {
+				if (str.startsWith("#") || str.equals("")) // 如果是#开头那么它是注释行
+				{
+					continue;
+				}
+				a.add(str);
+			}
+			bufr.close();
+			fr.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return a;
+	}
+
+	private static void writeFile(List<String> list, String url, boolean flag) {
+		FileWriter fw = null;
+		BufferedWriter bufw = null;
+		try {
+			fw = new FileWriter(url, flag);
+			bufw = new BufferedWriter(fw);
+			Iterator<String> it = list.iterator();
+			while (it.hasNext()) {
+				bufw.write(it.next());
+				bufw.flush();
+				bufw.newLine();
+			}
+			bufw.close();
+			fw.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+}

@@ -1,0 +1,53 @@
+package servlet;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import util.DBUtil;
+
+/**
+ * 	 验证账号密码
+ */
+public class LoginServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		String id = request.getParameter("id");
+		String password = (String) request.getParameter("password");
+		System.out.println("id:" + id);
+		System.out.println("password:" + password);
+		String sql = "SELECT * FROM user_info WHERE id=" + id;
+		DBUtil.getDBUtil().getConn();// 连接数据库
+		@SuppressWarnings("unchecked")
+		ArrayList<HashMap<String, String>> list = (ArrayList<HashMap<String, String>>) DBUtil.getDBUtil().executeQuery(sql);
+		DBUtil.getDBUtil().close();
+		if (list.isEmpty()||list.get(0).isEmpty())// 未查询到该账号
+		{
+			System.out.println("没有此账号");
+			response.sendRedirect("login.jsp?tip=error1");
+			return;
+		} else if (password.equals(list.get(0).get("password"))) {// 验证成功
+			System.out.println("登陆成功");
+			HttpSession session = request.getSession();
+			session.setAttribute("id", id);
+			response.sendRedirect("list");
+			return;
+		}
+		response.sendRedirect("login.jsp?tip=error2");
+		System.out.println("密码错误");
+		return;
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		doGet(request, response);
+	}
+
+}

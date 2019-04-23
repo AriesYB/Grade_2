@@ -1,0 +1,110 @@
+@charset "UTF-8";
+*{
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body{
+	font-size: 14px;
+	color: #444;
+}
+.container{
+	max-width: 1080px;
+	margin: 0 auto;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clear-float:after,
+.clear-float:before {
+	content: " ";
+	display: block;
+	clear: both;
+}
+.column-1,
+.column-2,
+.column-3,
+.column-4,
+.column-5,
+.column-6,
+.column-7,
+.column-8,
+.column-9{
+	position: relative;
+	min-height: 1px;
+	float: left;
+}
+.column-1{
+	width: 10%;
+}
+.column-2{
+	width: 20%;
+}
+.column-3{
+	width: 30%;
+}
+.column-4{
+	width: 40%;
+}
+.column-5{
+	width: 50%;
+}
+.column-6{
+	width: 60%;
+}
+.column-7{
+	width: 70%;
+}
+.column-8{
+	width: 80%;
+}
+.column-9{
+	width: 90%;
+}
+a{
+	text-decoration:none;
+}
+.top-nav{
+	background: #436EEE;
+}
+.top-nav .item{
+	display: inline-block;
+	padding: 6px 10px; 
+	color: #666;
+}
+.top-nav .item:hover{
+	color: #000;
+}
+.header{
+	padding: 20px 0;
+}
+.header .logo{
+	width: 90px;
+	height: 60px;
+}
+.header .search-bar{
+	border: 2px solid rgb(69, 138, 230);
+	
+}
+.header .search-bar input,button{
+	float: left;
+	border: 0;
+	padding: 8px;
+}
+.header .search-bar input{
+	width: 80%;
+	outline: 0;
+}
+.header .search-bar button{
+	width: 20%;
+	background: rgb(69, 138, 230);
+	color: #fff;
+}
+.header .search-bar button:hover{
+	cursor: pointer;
+}
+.header a{
+	float: right;
+}

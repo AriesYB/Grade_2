@@ -1,0 +1,28 @@
+.jfx-hamburger {
+	-fx-spacing: 5;
+	-fx-cursor: hand;
+}
+
+.jfx-hamburger:hover {
+	-fx-background-color: #929292;
+}
+
+.jfx-hamburger StackPane {
+	-fx-pref-width: 30px;
+	-fx-pref-height: 2px;
+	-fx-background-color: #000000;
+	-fx-background-radius: 5px;
+}
+
+#search_butn:hover {
+	-fx-background-color: #1861c2;
+}
+
+#menuPane, #button_1, #button_2, #button_3, #button_4 {
+	-fx-background-color: #e9e9e9;
+}
+
+#button_1:hover, #button_2:hover, #button_3:hover, #button_4:hover {
+	-fx-cursor: hand;
+	-fx-background-color: #bfbfbf;
+}

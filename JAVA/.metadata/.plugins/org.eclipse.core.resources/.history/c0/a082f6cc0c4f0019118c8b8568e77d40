@@ -1,0 +1,206 @@
+package com.huawei;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+
+public class System {
+	private static Map<Integer, Car> cars;// 保存所有的车辆
+	private static Map<Integer, Road> roads;// 保存所有的路
+	private static Map<Integer, Cross> crosses;// 保存所有的路口
+	private static List<Car> checkedCars = new ArrayList<Car>();// check之后的车辆
+	private static List<Car> endCars = new ArrayList<Car>();// 跑了之后的车辆
+	private static List<Car> newCar = new ArrayList<Car>();// 未上路的车
+	private static List<Car> onLoadCar = new ArrayList<Car>();// 在路上的车
+	private static List<Car> finshedCars = new ArrayList<Car>();// 到达终点车辆
+	private static int time = 1;
+
+	public static void launch() {
+		newCar.addAll(cars.values());
+		while (finshedCars.size() != cars.size()) {// 所有车辆均到达终点则跳出循环
+			while (endCars.size() != onLoadCar.size()) {// 所有路上的车都check后并且进入终止状态后进入下一个时间片
+
+				// check并且处理路上的车
+				for (Cross cross : crosses.values()) {// 遍历路口
+					int index[] = cross.getRoadID();
+					Arrays.sort(index);// 升序排序
+					for (int n = 0; n < index.length; n++) { // 遍历路口连接的路
+						Road road = roads.get(index[n]);
+						runAllOnLoadCar(road, cross);
+					}
+				}
+
+				// 处理路口的车以及未check的车
+				for (Cross cross : crosses.values()) {// 遍历路口
+					runAllOnCrossCar(cross);
+				}
+				for (Car car : newCar) {// 到达出发时间后发车
+					if (car.getTime() == time) {
+						addPath(car);
+						car.start();
+						onLoadCar.add(car);
+						newCar.remove(car);
+					}
+				}
+			}
+
+			checkedCars.clear();
+			time++;
+		}
+	}
+
+	/**
+	 * 运行指向某路口的路上的所有的车
+	 */
+	public static void runAllOnLoadCar(Road road, Cross cross) {
+		/*
+		 * if (road.isDuplex()) { if (road.getTo().equals(cross)) { for (int i = 1; i <=
+		 * road.getChannels().size() / 2; i++) { for (Car car :
+		 * road.getChannels().get(i)) { car.checkCar(); car.run(); } } } else { for (int
+		 * i = -1; i >= -road.getChannels().size() / 2; i--) { for (Car car :
+		 * road.getChannels().get(i)) { car.checkCar(); car.run(); } } } } else { if
+		 * (road.getTo().equals(cross)) { for (int i = 1; i <=
+		 * road.getChannels().size(); i++) { for (Car car : road.getChannels().get(i)) {
+		 * car.checkCar(); car.run(); } } } }
+		 */
+		int i = 0;
+		int j = 0;
+		if (road.isDuplex()) {
+			if (road.getTo().equals(cross)) {
+				i = 1;
+				j = road.getChannels().size() / 2;
+			} else {
+				i = -1;
+				j = -road.getChannels().size() / 2;
+			}
+		} else {
+			if (road.getTo().equals(cross)) {
+				i = 1;
+				j = road.getChannels().size();
+			}
+		}
+		int k = i;
+		for (; k * i != k * j; i += k) {
+			for (Car car : road.getChannels().get(i)) {
+				car.checkCar();
+				car.run();
+			}
+		}
+	}
+
+	/**
+	 * 运行所有通过某路口的车
+	 */
+	public static void runAllOnCrossCar(Cross cross) {
+		ArrayList<Car> passCars = new ArrayList<>();
+		int index[] = cross.getRoadID();
+		Arrays.sort(index);// 升序排序
+		for (int n = 0; n < index.length; n++) { // 遍历路口连接的路
+			Road road = roads.get(index[n]);
+			//遍历车道
+			int i = 0;
+			int j = 0;
+			if (road.isDuplex()) {
+				if (road.getTo().equals(cross)) {
+					i = 1;
+					j = road.getChannels().size() / 2;
+				} else {
+					i = -1;
+					j = -road.getChannels().size() / 2;
+				}
+			} else {
+				if (road.getTo().equals(cross)) {
+					i = 1;
+					j = road.getChannels().size();
+				}
+			}
+			int k = i;
+			for (; k * i != k * j; i += k) {//遍历车道
+				Car car = road.getFirst(i);
+				if(!car.isEnd()) {//获取过路口的车辆
+					passCars.add(car);
+				}
+			}
+		}
+	}
+
+	public static void addPath(Car car) {// 上路之前给车添加路径
+		Cross start = car.getStart();
+		Cross destination = car.getDestination();
+		car.setPath(path(start, destination));
+	}
+
+	private static LinkedList<Road> path(Cross from, Cross to) {// TODO 路径算法
+		LinkedList<Road> path = new LinkedList<Road>();
+
+		return path;
+	}
+
+	public static void initGraph() {
+
+	}
+
+	public static void read(String carPath, String roadPath, String crossPath) {
+		crosses = Util.readCrossInfo(crossPath);
+		cars = Util.readCarInfo(carPath);
+		roads = Util.readRoadInfo(roadPath);
+	}
+
+	public static void write(String answerPath) {
+		Util.writeAnswerInfo(cars.values(), answerPath);
+	}
+
+	public static void addCheckedCar(Car car) {
+		if (car != null) {
+			checkedCars.add(car);
+		}
+	}
+
+	public static void removeCheckedCar(Car car) {
+		if (car != null) {
+			checkedCars.remove(car);
+			endCars.add(car);
+		}
+	}
+
+	public static boolean isChecked(Car car) {
+		if (checkedCars.contains(car)) {
+			return true;
+		}
+		return false;
+	}
+
+	public static int getTime() {
+		return time;
+	}
+
+	public static void finished(Car car) {
+		if (!finshedCars.contains(car)) {
+			onLoadCar.remove(car);
+			endCars.remove(car);
+			finshedCars.add(car);
+		}
+	}
+
+	public static Cross getCross(int id) {
+		if (crosses.containsKey(id)) {
+			return crosses.get(id);
+		}
+		return null;
+	}
+
+	public static Map<Integer, Car> getCars() {
+		return cars;
+	}
+
+	public static Map<Integer, Road> getRoads() {
+		return roads;
+	}
+
+	public static Map<Integer, Cross> getCrosses() {
+		return crosses;
+	}
+
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="407.0" prefWidth="574.0" style="-fx-background-color: #333333;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.view.AdminCheckController">
+   <children>
+      <JFXButton layoutX="289.0" layoutY="119.0" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #a4a4a4; -fx-background-radius: 15;" text=" " />
+      <JFXButton layoutX="360.0" layoutY="119.0" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #a4a4a4; -fx-background-radius: 15;" text=" " />
+      <JFXButton defaultButton="true" layoutX="192.0" layoutY="119.0" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #a4a4a4; -fx-background-radius: 15;" text=" " />
+      <JFXButton layoutX="192.0" layoutY="160.0" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #a4a4a4; -fx-background-radius: 15;" text=" " textFill="#a4a4a4" />
+      <JFXButton layoutX="360.0" layoutY="160.0" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #a4a4a4; -fx-background-radius: 15;" text=" " />
+      <JFXTabPane layoutX="145.0" layoutY="116.0" prefHeight="88.0" prefWidth="287.0" />
+      <JFXTextField fx:id="account" focusColor="#ffffff00" layoutX="208.0" layoutY="119.0" prefHeight="22.0" prefWidth="167.0" promptText="请输入管理员账号" style="-fx-background-color: #a4a4a4;" unFocusColor="#333333">
+         <font>
+            <Font size="15.0" />
+         </font></JFXTextField>
+      <JFXPasswordField fx:id="password" focusColor="#ffffff00" layoutX="208.0" layoutY="160.0" prefHeight="28.0" prefWidth="167.0" promptText="请输入密码" style="-fx-background-color: #a4a4a4;" unFocusColor="#333333">
+         <font>
+            <Font size="15.0" />
+         </font></JFXPasswordField>
+      <JFXButton fx:id="login_butn" layoutX="224.0" layoutY="252.0" onAction="#checkAccount" prefHeight="42.0" prefWidth="134.0" style="-fx-background-color: #d42626; -fx-cursor: hand; -fx-background-radius: 50;" text="登录" textFill="#d5d5d5">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane fx:id="pane_butn" onMouseClicked="#backToMain" onMousePressed="#setPressedColor" onMouseReleased="#setReleasedColor" prefHeight="30.0" prefWidth="46.0" stylesheets="@../../../resources/css/AdminCheck.css">
+         <children>
+            <Line fx:id="line_1" endX="-80.0" endY="10.0" fill="BLACK" layoutX="100.0" layoutY="15.0" startX="-90.0" styleClass="line" />
+            <Line fx:id="line_2" endX="-80.0" endY="-10.0" layoutX="100.0" layoutY="15.0" startX="-90.0" styleClass="line" />
+            <Line fx:id="line_3" endX="-70.39998626708984" endY="-7.62939453125E-6" layoutX="100.0" layoutY="15.0" startX="-90.0" styleClass="line" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

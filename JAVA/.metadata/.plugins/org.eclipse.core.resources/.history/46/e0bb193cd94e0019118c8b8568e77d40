@@ -1,0 +1,9 @@
+package com.huawei;
+
+public class T {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

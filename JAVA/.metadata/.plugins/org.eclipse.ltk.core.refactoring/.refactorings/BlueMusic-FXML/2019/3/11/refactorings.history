@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename method &apos;app.MainApp.backTo()&apos; to &apos;backFromSet&apos;&#x0D;&#x0A;- Original project: &apos;BlueMusic-FXML&apos;&#x0D;&#x0A;- Original element: &apos;app.MainApp.backTo()&apos;&#x0D;&#x0A;- Renamed element: &apos;app.MainApp.backFromSet()&apos;&#x0D;&#x0A;- Update references to refactored element" delegate="false" deprecate="true" description="Rename method &apos;backTo&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.method" input="/src&lt;app{MainApp.java[MainApp~backTo" name="backFromSet" references="true" stamp="1552201411245" version="1.0"/>
+</session>

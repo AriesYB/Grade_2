@@ -1,0 +1,17 @@
+package com.huawei;
+
+import java.util.Collection;
+
+public class T {
+
+	public static void main(String[] args) {
+		Util.readCrossInfo("C://Users/管理员/Desktop/cross.txt");
+		Util.readCarInfo("C://Users/管理员/Desktop/car.txt");
+		Util.readRoadInfo("C://Users/管理员/Desktop/road.txt");
+		
+		Util.writeAnswerInfo((Collection<Car>) Util.readCrossInfo("C://Users/管理员/Desktop/cross.txt"), "C://Users/管理员/Desktop/answer.txt");
+//		System.launch();
+//		System.write("C://Users/管理员/Desktop/answer.txt");
+	}
+
+}

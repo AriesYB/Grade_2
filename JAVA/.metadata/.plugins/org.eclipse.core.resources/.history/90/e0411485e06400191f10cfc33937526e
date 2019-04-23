@@ -1,0 +1,10 @@
+package math;
+
+public class Main {
+
+	int[][] H;//系数矩阵
+	int []b;
+	public static void main(String[] args) {
+		
+	}
+}

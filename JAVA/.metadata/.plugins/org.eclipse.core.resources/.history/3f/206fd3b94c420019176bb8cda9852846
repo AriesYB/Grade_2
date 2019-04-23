@@ -1,0 +1,13 @@
+#imgIcon{
+	-fx-image:url(../img/icon.png);
+}
+#imgIcon:hover,#back:hover,#forword:hover,#search-butn:hover,#img-head:hover,#down-arrow:hover,#clothes:hover,#set:hover,#last:hover,#play:hover,#next:hover{
+	-fx-cursor:hand;
+}
+#search-bar{
+	-fx-background-color:#3746A5;
+	-fx-background-radius:25px;
+}
+#bottom-nav{
+	 -fx-background-color:#FFFFFF;
+}

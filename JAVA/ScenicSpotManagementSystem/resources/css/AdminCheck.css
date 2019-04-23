@@ -1,0 +1,7 @@
+.line:hover{
+	-fx-cursor:hand;
+}
+#pane_butn:hover{
+	-fx-cursor:hand;
+	-fx-background-color: #a4a4a4;
+}

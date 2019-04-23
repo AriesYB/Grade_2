@@ -1,0 +1,27 @@
+package com.huawei;
+
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.Map;
+
+public class T {
+
+	public static void main(String[] args) {
+		System.read("C://Users/管理员/Desktop/car.txt", "C://Users/管理员/Desktop/road.txt",
+				"C://Users/管理员/Desktop/cross.txt");
+
+		for (Car car : System.getCars().values()) {
+			java.lang.System.out.println(car.toString());
+		}
+		for (Cross cross : System.getCrosses().values()) {
+			java.lang.System.out.println(cross.toString());
+		}
+		for (Road road : System.getRoads().values()) {
+			java.lang.System.out.println(road.toString());
+		}
+		java.lang.System.out.println("-------------------------------");
+//		System.launch();
+//		System.write("C://Users/管理员/Desktop/answer.txt");
+	}
+
+}

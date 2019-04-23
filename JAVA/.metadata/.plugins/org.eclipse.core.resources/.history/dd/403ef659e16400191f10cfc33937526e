@@ -1,0 +1,12 @@
+package math;
+
+public class Main {
+
+	public static void main(String[] args) {
+		System.out.println("请输入维数");
+		int n = 0;//维数
+		int[][] H = new int [n][n];// 系数矩阵
+		int[][]b = new int[1][n];//方程右端向量
+		
+	}
+}

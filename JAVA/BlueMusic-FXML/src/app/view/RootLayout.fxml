@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXSlider?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="651.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.view.RootLayoutController">
+   <children>
+      <HBox id="top-nav">
+         <children>
+            <ImageView id="imgIcon" fitHeight="52.0" fitWidth="68.0" onMouseClicked="#backFirst" pickOnBounds="true" preserveRatio="true" />
+            <Region prefHeight="52.0" prefWidth="49.0" />
+            <ImageView id="back" fx:id="back" fitHeight="30.0" fitWidth="30.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../resources/img/back.png" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" top="10.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView id="forword" fx:id="forword" fitHeight="30.0" fitWidth="30.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#forword" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../resources/img/forword%20.png" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="5.0" right="5.0" top="10.0" />
+               </HBox.margin>
+            </ImageView>
+            <StackPane>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" top="5.0" />
+               </HBox.margin>
+               <children>
+                  <TextField id="search-bar" fx:id="searchBar" prefHeight="33.0" prefWidth="216.0">
+                     <StackPane.margin>
+                        <Insets />
+                     </StackPane.margin>
+                  </TextField>
+                  <HBox>
+                     <StackPane.margin>
+                        <Insets left="250.0" top="10.0" />
+                     </StackPane.margin>
+                     <children>
+                        <ImageView id="search-butn" fx:id="searchButn" fitHeight="27.0" fitWidth="25.0" onMouseClicked="#search" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../resources/img/search.png" />
+                           </image>
+                        </ImageView>
+                        <Region prefHeight="9.0" prefWidth="12.0" />
+                     </children>
+                  </HBox>
+               </children>
+            </StackPane>
+            <Region prefHeight="52.0" prefWidth="134.0" />
+            <ImageView id="img-head" fx:id="headButn" fitHeight="35.0" fitWidth="42.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#personalInfo" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../resources/img/head.png" />
+               </image>
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin></ImageView>
+            <Label prefHeight="53.0" prefWidth="53.0" text="Label" />
+            <ImageView id="down-arrow" fx:id="downArrow" fitHeight="30.0" fitWidth="30.0" layoutX="608.0" layoutY="10.0" onMouseClicked="#showAccount" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../resources/img/down.png" />
+               </image>
+               <HBox.margin>
+                  <Insets right="5.0" top="10.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView id="clothes" fx:id="downArrow1" fitHeight="30.0" fitWidth="30.0" onMouseClicked="#showClothes" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../resources/img/clothes.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" top="10.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView id="set" fx:id="downArrow2" fitHeight="30.0" fitWidth="30.0" onMouseClicked="#showSet" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../resources/img/set.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" top="10.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+      <StackPane prefHeight="556.0" prefWidth="900.0" />
+      <HBox id="bottom-nav">
+         <children>
+            <ImageView id="last" fx:id="last" fitHeight="41.0" fitWidth="74.0" onMouseClicked="#lastMusic" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../resources/img/last.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" top="5.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView id="play" fx:id="play" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#play" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../resources/img/play.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView id="next" fx:id="next" fitHeight="41.0" fitWidth="74.0" onMouseClicked="#nextMusic" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../resources/img/next.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" top="5.0" />
+               </HBox.margin>
+            </ImageView>
+            <Region prefHeight="50.0" prefWidth="20.0" />
+            <Label prefHeight="53.0" prefWidth="51.0" text="time" />
+            <JFXSlider prefHeight="50.0" prefWidth="355.0" />
+            <Label layoutX="272.0" layoutY="10.0" prefHeight="53.0" prefWidth="51.0" text="time" />
+            <ImageView id="voice" fx:id="voice" fitHeight="33.0" fitWidth="27.0" layoutX="154.0" layoutY="15.0" onMouseClicked="#mute" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../resources/img/voice.png" />
+               </image>
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+            </ImageView>
+            <JFXSlider layoutX="277.0" layoutY="10.0" prefHeight="27.0" prefWidth="110.0">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+            </JFXSlider>
+         </children>
+      </HBox>
+   </children>
+   <stylesheets>
+      <URL value="@../../../resources/css/RootLayout.css" />
+      <URL value="@../../../resources/css/theme_blue.css" />
+   </stylesheets>
+</VBox>
