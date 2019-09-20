@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.neu.dao.PrescriptionDAO">
+    <select id="findById" parameterType="int" resultType="edu.neu.entity.Prescription">
+        SELECT *
+        FROM prescription
+        WHERE id = #{id}
+          AND isDeleted = 0;
+    </select>
+    <select id="findBySelf" parameterType="edu.neu.entity.Prescription" resultType="edu.neu.entity.Prescription">
+        SELECT *
+        FROM prescription
+        WHERE medical_record_num = #{medical_record_num}
+          AND register_id = #{register_id}
+          AND doctor = #{doctor}
+          AND type = #{type}
+          AND time = DATE_FORMAT(#{time}, '%Y-%m-%d %T')
+          AND isDeleted = 0
+    </select>
+    <select id="findByMedicalInfo" resultType="edu.neu.entity.Prescription">
+        SELECT *
+        FROM prescription
+        WHERE medical_record_num = #{0}
+          AND register_id = #{1}
+          AND doctor = #{2}
+          AND type = #{3}
+          AND isDeleted = 0;
+    </select>
+    <insert id="insertPrescription" parameterType="edu.neu.entity.Prescription">
+        INSERT INTO prescription (medical_record_num, register_id, doctor, type, name, time)
+        VALUES (#{medical_record_num}, #{register_id}, #{doctor}, #{type}, #{name}, #{time});
+    </insert>
+    <update id="updatePrescription">
+        UPDATE prescription
+        SET name = #{1}
+        WHERE id = #{0}
+          AND isDeleted = 0;
+    </update>
+    <update id="deletePrescription" parameterType="int">
+        UPDATE prescription
+        SET isDeleted = 1
+        WHERE id = #{id}
+          AND isDeleted = 0
+          AND status = 1;
+    </update>
+    <update id="cancelPrescription" parameterType="int">
+        UPDATE prescription
+        SET status =3
+        WHERE id = #{id}
+          AND status = 2
+          AND isDeleted = 0;
+    </update>
+    <update id="estbPrescription" parameterType="int">
+        UPDATE prescription
+        SET status = 2
+        WHERE id = #{id}
+          AND status = 1
+          AND isDeleted = 0
+    </update>
+    <select id="findByMedicalNumRegister" resultType="edu.neu.entity.Prescription">
+        SELECT * FROM prescription WHERE medical_record_num = #{0} AND register_id = #{1} AND isDeleted = 0;
+    </select>
+</mapper>

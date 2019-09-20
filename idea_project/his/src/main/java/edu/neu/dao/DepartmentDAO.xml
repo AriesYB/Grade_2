@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.neu.dao.DepartmentDAO">
+    <!-- 查询全部 -->
+    <select id="findAll" resultType="edu.neu.entity.Department">
+        SELECT * FROM department WHERE isDeleted = 0
+    </select>
+    <!-- id查询科室 -->
+    <select id="findById" parameterType="int" resultType="edu.neu.entity.Department">
+        SELECT * FROM department WHERE id= #{id} AND isDeleted = 0
+    </select>
+    <!-- code查询科室 -->
+    <select id="findByCode" parameterType="String" resultType="edu.neu.entity.Department">
+        SELECT * FROM department WHERE DeptCode= #{code} AND isDeleted = 0
+    </select>
+    <!-- code查询id -->
+    <select id="findIdByCode" parameterType="String" resultType="int">
+        SELECT id FROM department WHERE DeptCode= #{code} AND isDeleted = 0
+    </select>
+</mapper>

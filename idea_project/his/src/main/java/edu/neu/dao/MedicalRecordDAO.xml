@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.neu.dao.MedicalRecordDAO">
+    <select id="findById" parameterType="int" resultType="edu.neu.entity.MedicalRecord">
+        SELECT *
+        FROM medical_record
+        WHERE id = #{id}
+          AND isDeleted = 0
+    </select>
+    <select id="findByMedicalNum" parameterType="int" resultType="edu.neu.entity.MedicalRecord">
+        SELECT *
+        FROM medical_record
+        WHERE id = (SELECT MAX(id) FROM medical_record WHERE medical_record_num = #{id} AND isDeleted = 0)
+          AND isDeleted = 0
+    </select>
+    <insert id="insertMedicalRecord" parameterType="edu.neu.entity.MedicalRecord">
+        INSERT INTO medical_record (register_id, medical_record_num, chief_complaint, current_treatment,
+                                    history_present_illness,
+                                    past_history, allergic_history, health_checkup, primary_diagnosis, diagnosis_type,
+                                    checkup_advice, announcements, medical_record_status)
+        VALUES (#{register_id}, #{medical_record_num}, #{chief_complaint}, #{current_treatment},
+                #{history_present_illness}, #{past_history},
+                #{allergic_history}, #{health_checkup}, #{primary_diagnosis}, #{diagnosis_type}, #{checkup_advice},
+                #{announcements}, #{medical_record_status})
+    </insert>
+    <update id="updateMedicalRecord" parameterType="edu.neu.entity.MedicalRecord">
+        UPDATE medical_record
+        SET register_id=#{register_id},
+            medical_record_num=#{medical_record_num},
+            chief_complaint=#{chief_complaint},
+            current_treatment = #{current_treatment},
+            history_present_illness=#{history_present_illness},
+            past_history=#{past_history},
+            allergic_history=#{allergic_history},
+            health_checkup=#{health_checkup},
+            primary_diagnosis=#{primary_diagnosis},
+            diagnosis_type=#{diagnosis_type},
+            checkup_advice=#{checkup_advice},
+            announcements=#{announcements},
+            medical_record_status=#{medical_record_status}
+        WHERE id = #{id}
+          AND isDeleted = 0
+    </update>
+    <delete id="deleteMedicalRecord" parameterType="int">
+        UPDATE medical_record
+        SET isDeleted = 1
+        WHERE id = #{id}
+          AND isDeleted = 0
+    </delete>
+    <delete id="deleteByMedicalNum" parameterType="int">
+        DELETE
+        FROM medical_record
+        WHERE medical_record_num = #{id}
+          AND isDeleted = 0
+    </delete>
+    <select id="newMedicalNum" resultType="int">
+        SELECT MAX(medical_record_num) + 1
+        FROM medical_record
+        WHERE isDeleted = 0
+    </select>
+</mapper>

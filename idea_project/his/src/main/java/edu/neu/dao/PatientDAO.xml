@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.neu.dao.PatientDAO">
+    <!-- 查询所有 -->
+    <select id="findAll" resultType="edu.neu.entity.Patient">
+        SELECT * FROM patient WHERE isDeleted = 0
+    </select>
+    <!-- 用id查询 -->
+    <select id="findById" parameterType="int" resultType="edu.neu.entity.Patient">
+        SELECT * FROM patient WHERE id = #{id} AND isDeleted = 0;
+    </select>
+
+    <!-- 用身份证查询 -->
+    <select id="findById_number" parameterType="String" resultType="edu.neu.entity.Patient">
+        SELECT * FROM patient WHERE ID_number = #{id_number} AND isDeleted = 0;
+    </select>
+
+    <!-- 用身份证查询id -->
+    <select id="findIdById_number" parameterType="String" resultType="int">
+        SELECT id FROM patient WHERE ID_number = #{id_number} AND isDeleted = 0
+    </select>
+
+    <!-- 插入 -->
+    <insert id="insertPatient" parameterType="Patient">
+        INSERT INTO patient (name,sex, ID_number, date_birth, age, address) VALUES (#{name},#{sex},#{ID_number},#{date_birth},#{age},#{address})
+    </insert>
+
+    <!-- 更新 -->
+    <update id="updatePatient" parameterType="Patient">
+        UPDATE patient SET name=#{name},sex=#{sex}, ID_number=#{ID_number}, date_birth=#{date_birth}, age=#{age}, address=#{address} WHERE id = #{id}
+    </update>
+    <!-- 删除 -->
+    <update id="deletePatientById" parameterType="int">
+        UPDATE patient SET isDeleted = 1 WHERE id = #{id} AND isDeleted = 0
+    </update>
+<!--    <select id="findByDoctorDate" resultType="edu.neu.entitytity.Patient">-->
+<!--        SELECT * FROM patient INNER JOIN register_info USING (ID_number) WHERE doctor = #{0} AND (see_doctor_time BETWEEN #{1} AND #{2}) AND patient.isDeleted = 0  AND register_info.isDeleted = 0-->
+<!--    </select>-->
+</mapper>

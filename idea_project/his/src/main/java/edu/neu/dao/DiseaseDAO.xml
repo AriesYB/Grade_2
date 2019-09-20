@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.neu.dao.DiseaseDAO">
+    <select id="findAll" resultType="edu.neu.entity.Disease">
+        SELECT *
+        FROM disease;
+    </select>
+    <select id="findByICD" parameterType="String" resultType="edu.neu.entity.Disease">
+        SELECT *
+        FROM disease
+        WHERE DiseaseICD = #{icd};
+    </select>
+    <select id="findByName" parameterType="String" resultType="edu.neu.entity.DiseaseResult">
+        SELECT t1.id, t1.DiseaseCode, t1.DiseaseName, t1.DiseaseICD, t2.DicaName
+        FROM disease AS t1
+                 INNER JOIN disecategory AS t2 ON t1.DiseCategoryID = t2.id
+        WHERE t1.DiseaseName LIKE CONCAT('%',#{name},'%');
+    </select>
+</mapper>

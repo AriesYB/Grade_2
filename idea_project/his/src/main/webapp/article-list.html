@@ -1,0 +1,285 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="lib/html5shiv.js"></script>
+    <script type="text/javascript" src="lib/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="static/h-ui/css/H-ui.min.css"/>
+    <link rel="stylesheet" type="text/css" href="static/h-ui.admin/css/H-ui.admin.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/Hui-iconfont/1.0.8/iconfont.css"/>
+    <link rel="stylesheet" type="text/css" href="static/h-ui.admin/skin/default/skin.css" id="skin"/>
+    <link rel="stylesheet" type="text/css" href="static/h-ui.admin/css/style.css"/>
+    <!--[if IE 6]>
+    <script type="text/javascript" src="lib/DD_belatedPNG_0.0.8a-min.js"></script>
+    <script>DD_belatedPNG.fix('*');</script>
+    <![endif]-->
+    <title>列表</title>
+</head>
+<body>
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 管理 <span
+        class="c-gray en">&gt;</span> 列表 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px"
+                                            href="javascript:location.replace(location.href);" title="刷新"><i
+        class="Hui-iconfont">&#xe68f;</i></a></nav>
+<div class="page-container">
+    <div class="text-l">
+        <input type="text" id="search_content" placeholder="请输入病历号" style="width:250px" class="input-text">
+        <button id="" class="btn btn-success" type="button" onclick="searchPatient()"><i
+                class="Hui-iconfont">&#xe665;</i> 搜索
+        </button>
+    </div>
+    <div class="text-l mt-10">
+        <table>
+            <tr class="text-c">
+                <td style="width: 40px"><label>姓名</label></td>
+                <td style="width: 100px"><input type="text" id="name" readonly="readonly" class="input-text"></td>
+                <td style="width: 120px"><label>身份证号码</label></td>
+                <td style="width: 220px"><input type="text" id="id_number" readonly="readonly" class="input-text"></td>
+                <td style="width: 100px"><label>家庭住址</label></td>
+                <td style="width: 220px"><input type="text" id="address" readonly="readonly" class="input-text"></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <div class="mt-20">
+        <table class="table table-border table-bordered table-bg table-hover table-sort table-responsive">
+            <thead>
+            <tr class="text-c">
+                <th width="25"><input type="checkbox" name="" value=""></th>
+                <th width="80">病历号</th>
+                <th>姓名</th>
+                <th width="80">项目名称</th>
+                <th width="80">单价</th>
+                <th width="120">数量</th>
+                <th width="75">开立时间</th>
+                <th width="60">状态</th>
+            </tr>
+            </thead>
+            <tbody id="content">
+            <!--            <tr class="text-c" id="row-">-->
+            <!--				<td><input type="checkbox" id="check-"></td>-->
+            <!--			<td id="medical_num-"></td>-->
+            <!--			<td id="name-"></td>-->
+            <!--			<td id="project-"></td>-->
+            <!--			<td id="price-"></td>-->
+            <!--			<td id="quantity-"></td>-->
+            <!--			<td id="time-"></td>-->
+            <!--			<td id="status-"></td>-->
+            <!--			</tr>-->
+            </tbody>
+        </table>
+        <div class="mt-10">
+            <span class="btn btn-success-outline" onclick="showSettle()">收费结算</span>
+        </div>
+        <div id="modal-settle" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header text-c">
+                        <h3 id="myModalLabel">发票信息(缴费)</h3>
+                        <a class="close" data-dismiss="modal" aria-hidden="true" href="javascript:void(0);">×</a>
+                    </div>
+                    <div class="modal-body col-md-12">
+                        <div class="col-md-2 mb-10"><label>发票号:</label></div>
+                        <div class="col-md-4 mb-10"><input type="text" readonly="readonly" class="input-text"
+                                                           id="invoice_id">
+                        </div>
+                        <div class="col-md-2 mb-10"><label>病历号:</label></div>
+                        <div class="col-md-4 mb-10"><input type="text" id="medical_num" readonly="readonly"
+                                                           class="input-text"></div>
+                        <div class="col-md-2 mb-10"><label>患者姓名:</label></div>
+                        <div class="col-md-4 mb-10"><input type="text" readonly="readonly" class="input-text"
+                                                           id="patient_name"></div>
+                        <div class="col-md-2 mb-10"><label>支付方式:</label></div>
+                        <div class="col-md-4 mb-10"><span class="select-box"><select class="select" id="charge_method">
+							<option style='display: none'>请选择</option>
+							<option>现金</option>
+							<option>支付宝</option>
+							<option>微信</option>
+							<option>银行卡</option>
+						</select></span></div>
+                        <div class="col-md-2 mb-10"><label>应收金额:</label></div>
+                        <div class="col-md-4 mb-10"><input type="text" readonly="readonly" class="input-text"
+                                                           id="need_amount">
+                        </div>
+                        <div class="col-md-2 mb-10"><label>实收金额:</label></div>
+                        <div class="col-md-4 mb-10"><input type="text" id="real_amount"
+                                                           class="input-text"></div>
+                        <div class="col-md-2 mb-10"><label>找零金额:</label></div>
+                        <div class="col-md-4 mb-10"><input type="text" id="back_amount" readonly="readonly"
+                                                           class="input-text"></div>
+                        <div class="col-md-2 mb-10"><label>&nbsp;</label></div>
+                        <div class="col-md-4 mb-10"><label>&nbsp;</label></div>
+                    </div>
+                    <div class="modal-footer">
+                        <span class="btn btn-primary" onclick="settle()">收费</span>
+                        <button class="btn btn-warning" data-dismiss="modal" aria-hidden="true">取消</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--_footer 作为公共模版分离出去-->
+<script type="text/javascript" src="lib/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="lib/layer/2.4/layer.js"></script>
+<script type="text/javascript" src="static/h-ui/js/H-ui.min.js"></script>
+<script type="text/javascript" src="static/h-ui.admin/js/H-ui.admin.js"></script> <!--/_footer 作为公共模版分离出去-->
+
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript" src="lib/My97DatePicker/4.8/WdatePicker.js"></script>
+<script type="text/javascript" src="lib/datatables/1.10.0/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="lib/laypage/1.2/laypage.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $.ajaxSetup({
+            complete: function(xhr,status) {
+                var sessionStatus = xhr.getResponseHeader('sessionstatus');
+                if(sessionStatus == 'timeout') {
+                    modaldemo();
+                    modalalertdemo("由于您长时间没有操作, session已过期, 请重新登录",2000);
+                    addEventListener("DOMNodeRemoved", function (e) {
+                        //跳转页面
+                        window.top.location.href = "/his/logout";
+                    })
+                }else if (sessionStatus=="noauthority"){
+                    modaldemo();
+                    modalalertdemo("没有权限访问",2000);
+                    addEventListener("DOMNodeRemoved", function (e) {
+                        //跳转页面
+                        window.top.location.href = "/his/index";
+                    })
+                }
+            }
+        });
+    })
+    var medical_number;
+    //搜索病人
+    function searchPatient() {
+        var medicalNum = $("#search_content").val();
+        medical_number = medicalNum;
+        if (medicalNum == "") {
+            modaldemo();
+            modalalertdemo("请输入病历号", 1000);
+            return;
+        }
+        $.ajax({
+            type: "POST",
+            dataType: "JSON",
+            url: "registrar/getPatientFee",
+            data: {"medicalNum": medicalNum},
+            success: function (data) {
+                if (data[0] == null || data.length == 0) {
+                    modaldemo();
+                    modalalertdemo("未查询到信息", 2000);
+                    return;
+                }
+                $("#name").attr("value", data[0].name);
+                $("#id_number").attr("value", data[0].id_number);
+                $("#address").attr("value", data[0].address);
+                $("#content").empty();
+                for (var i = 0; i < data.length; i++) {
+                    $("#content").append("<tr class=\"text-c\" id=\"row-" + (i + 1) + "\">\n" +
+                        "<td><input type=\"checkbox\" id=\"check-" + (i + 1) + "\"></td>\n" +
+                        "\t\t\t<td id=\"medical_num-" + (i + 1) + "\">" + data[i].medical_record_num + "</td>\n" +
+                        "\t\t\t<td id=\"name-" + (i + 1) + "\">" + data[i].name + "</td>\n" +
+                        "\t\t\t<td id=\"project-" + (i + 1) + "\">" + data[i].project_name + "</td>\n" +
+                        "\t\t\t<td id=\"price-" + (i + 1) + "\">" + data[i].price + "</td>\n" +
+                        "\t\t\t<td id=\"quantity-" + (i + 1) + "\">" + data[i].quantity + "</td>\n" +
+                        "\t\t\t<td id=\"time-" + (i + 1) + "\">" + data[i].time + "</td>\n" +
+                        "\t\t\t<td id=\"status-" + (i + 1) + "\">" + data[i].status + "<input type='hidden' id='id-"+(i+1)+"' value='"+data[i].id+"'></td>\n" +
+                        "\t\t\t</tr>");
+                }
+            }, error: function () {
+                console.log("searchPatient() 失败");
+            }
+        })
+    }
+
+    var item = [];//结算了的id
+    //显示结算页面
+    function showSettle() {
+        if ($("#content input[type=checkbox]:checked").length == 0) {
+            modaldemo();
+            modalalertdemo("请选择后再结算", 1000);
+            return;
+        }
+        $("#modal-settle").modal("show");
+        //添加监听事件计算费用
+        $("#real_amount").on("input",function () {
+            $("#back_amount").val($("#real_amount").val()-$("#need_amount").val());
+        });
+        $.ajax({
+            type:"POST",
+            dataType:"JSON",
+            url:"registrar/getInvoice",
+            success:function (data) {
+                $("#invoice_id").attr("value",data);
+            },error:function () {
+                console.log("showSettle() 失败");
+            }
+        });
+        $("#medical_num").val(medical_number);
+        $("#patient_name").val($("#name").val());
+        var need_amount = 0;
+        item = [];
+        $("#content input[type=checkbox]:checked").each(function () {
+            var index = this.id.split("-")[1];
+            var item_id = $("#id-"+index).val();
+            item.push(item_id);
+            need_amount = need_amount+($("#price-"+index).html())*$("#quantity-"+index).html();
+        });
+        $("#need_amount").val(need_amount);
+    }
+
+    //结算
+    function settle() {
+        if ($("#back_amount").val()<0){
+            modaldemo();
+            modalalertdemo("费用不足",1000);
+            return;
+        }
+        //收费方式 和发票号
+        item.push($("#charge_method").val());
+        item.push($("#invoice_id").val());
+        $.ajax({
+            type:"POST",
+            dataType:"JSON",
+            url:"registrar/settle",
+            contentType: "application/json",
+            data: JSON.stringify(item),
+            success:function (data) {
+                if (data ==200){
+                    modaldemo();
+                    modalalertdemo("缴费成功",2000);
+                }
+            },error:function () {
+                console.log("settle() 失败");
+            }
+        });
+        //等消息框消失后
+        addEventListener("DOMNodeRemoved", function (e) {
+            //刷新页面
+            location.replace(location.href);
+        })
+
+    }
+
+    //弹出消息提示
+    function modaldemo() {
+        $("#modal-demo").modal("show");
+        $("#modal-demo").addClass("backdrop", false);
+    }
+
+    function modalalertdemo(str, time) {
+        $.Huimodalalert(str, time);
+    };
+</script>
+</body>
+</html>

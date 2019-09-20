@@ -1,0 +1,84 @@
+body{
+    background-size:cover;
+    background-attachment:fixed;
+}
+.main {
+    position: relative;
+    height: 200px;
+    width: 400px;
+    margin: 25vh auto;
+    background: rgba(0, 0, 0.1,0.3)
+}
+
+.table {
+    height: 80px;
+    display: block;
+    padding-top: 25px;
+    margin-bottom: 18px;
+}
+.account-content,
+.password-content{
+    padding-left: 10px;
+    height: 25px;
+    width: 180px;
+    border-radius: 13px;
+    border:1px solid #000;
+    background: rgb(219, 216, 216);
+    outline: 0;
+}
+/* .table input:hover{
+    border:1px solid rgb(106, 151, 247);
+} */
+.account-content:focus,
+.password-content:focus{
+    background: rgb(195, 206, 230);
+}
+#account-pic{
+    width: 23px;
+    height: 23px;
+    position: relative;
+    top: 6px;
+}
+#password-pic{
+    width: 23px;
+    height: 25px;
+    position: relative;
+    top: 5px;
+}
+/* .account-pic,
+.account-password{
+    width: 20px;
+    height: 20px;
+} */
+.account {
+    display: inline-block;
+    margin-left: 76px;
+    margin-top: 13px;
+    margin-bottom: 4px;
+}
+.password{
+    display: inline-block;
+    margin-left: 76px;
+    margin-bottom: 3px;
+}
+label{
+    color: rgb(255, 143, 79);
+    font-size: 13px;
+}
+span{
+    color: rgb(255, 255, 255);
+}
+#button {
+    cursor: pointer;
+    border: 0;
+    border-radius: 2px;
+    height:26px;
+    width: 90px;
+    margin-left: 152px;
+    font-weight: 100;
+    color: white;
+    background:rgb(32, 117, 228);
+}
+#button:hover{
+    background:rgb(37, 138, 226);
+}

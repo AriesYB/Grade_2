@@ -1,0 +1,460 @@
+<!--_meta 作为公共模版分离出去-->
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <link rel="Bookmark" href="/favicon.ico">
+    <link rel="Shortcut Icon" href="/favicon.ico"/>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="lib/html5shiv.js"></script>
+    <script type="text/javascript" src="lib/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="static/h-ui/css/H-ui.min.css"/>
+    <link rel="stylesheet" type="text/css" href="static/h-ui.admin/css/H-ui.admin.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/Hui-iconfont/1.0.8/iconfont.css"/>
+    <link rel="stylesheet" type="text/css" href="static/h-ui.admin/skin/default/skin.css" id="skin"/>
+    <link rel="stylesheet" type="text/css" href="static/h-ui.admin/css/style.css"/>
+    <!--[if IE 6]>
+    <script type="text/javascript" src="lib/DD_belatedPNG_0.0.8a-min.js"></script>
+    <script>DD_belatedPNG.fix('*');</script>
+    <![endif]-->
+    <!--/meta 作为公共模版分离出去-->
+
+    <title>现场挂号</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+</head>
+
+<body>
+<article class="page-container">
+    <form action="/his/register" method="post" class="form form-horizontal" id="form-member-add">
+        <div class="row cl">
+            <label class="form-label col-xs-1 col-sm-1"><span class="c-red">*</span>发票号：</label>
+            <div class="formControls col-xs-2 col-sm-2">
+                <input type="text" class="input-text" value="" placeholder="" id="invoice_id" name="invoice_id">
+            </div>
+            <div class="formControls col-xs-2 col-sm-2">
+                <input class="btn btn-primary radius" type="submit" value="&nbsp;&nbsp;挂号&nbsp;&nbsp;">
+            </div>
+            <div class="formControls col-xs-2 col-sm-2">
+                <input class="btn btn-primary radius" id="reset_btn" type="reset" value="&nbsp;&nbsp;清空&nbsp;&nbsp;">
+            </div>
+            <label class="form-label col-xs-5 col-sm-5"></label>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-1 col-sm-1">挂号信息</label>
+            <label class="form-label col-xs-11 col-sm-11"></label>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-1 col-sm-1"><span class="c-red">*</span>病历号：</label>
+            <div class="formControls col-xs-2 col-sm-2">
+                <input type="text" class="input-text" value="" placeholder="" id="medical_record_num"
+                       name="medical_record_num">
+            </div>
+            <label class="form-label col-xs-1 col-sm-1"><span class="c-red">*</span>姓名：</label>
+            <div class="formControls col-xs-2 col-sm-2">
+                <input type="text" class="input-text" value="" placeholder="" id="name" name="name">
+            </div>
+            <label class="form-label col-xs-1 col-sm-1"><span class="c-red">*</span>性别：</label>
+            <div class="formControls col-xs-2 col-sm-2">
+					<span class="select-box"><select class="select" id="sex" name="sex">
+							<option style='display: none'>请选择</option>
+							<option value="0">男</option>
+							<option value="1">女</option>
+						</select></span>
+            </div>
+            <label class="form-label col-xs-1 col-sm-1"><span class="c-red">*</span>年龄：</label>
+            <div class="formControls col-xs-1 col-sm-1">
+                <input type="text" class="input-text" value="" placeholder="" id="age" name="age">
+            </div>
+            <div class="formControls col-xs-1 col-sm-1" hidden="hidden">
+					<span class="select-box"><select class="select" id="unit" name="unit">
+							<option style='display: none'>请选择</option>
+							<option value="year">岁</option>
+							<option value="month">月</option>
+							<option value="day">日</option>
+						</select></span>
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-1 col-sm-1"><span class="c-red">*</span>出生日期：</label>
+            <div class="formControls col-xs-2 col-sm-2">
+                <input type="text" onfocus="WdatePicker({ maxDate:'#F{$dp.$D(\'logmax\')||\'%y-%M-%d\'}' })" id="date_birth" name="date_birth" class="input-text Wdate" style="width:120px;">
+                <input type="text" hidden="hidden" onfocus="WdatePicker({ minDate:'#F{$dp.$D(\'logmin\')}',maxDate:'%y-%M-%d' })" id="logmax" class="input-text Wdate" style="width:120px;">
+
+            </div>
+            <label class="form-label col-xs-1 col-sm-1"><span class="c-red">*</span>结算类别：</label>
+            <div class="formControls col-xs-2 col-sm-2">
+					<span class="select-box"><select class="select" id="settlement_type" name="settlement_type">
+							<option style='display: none'>请选择</option>
+							<option>自费</option>
+							<option>市医保</option>
+						</select></span>
+            </div>
+
+            <label class="form-label col-xs-1 col-sm-1"><span class="c-red">*</span>身份证号：</label>
+            <div class="formControls col-xs-2 col-sm-2">
+                <input type="text" class="input-text" value="" placeholder="" id="id_number" name="id_number">
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-1 col-sm-1"><span class="c-red">*</span>家庭住址：</label>
+            <div class="formControls col-xs-2 col-sm-2">
+                <input type="text" class="input-text" value="" placeholder="" id="address" name="address">
+            </div>
+            <label class="form-label col-xs-1 col-sm-1"><span class="c-red">*</span>挂号科室：</label>
+            <div class="formControls col-xs-2 col-sm-2">
+					<span class="select-box"><select class="select" id="department" name="department">
+						</select></span>
+            </div>
+            <label class="form-label col-xs-1 col-sm-1"><span class="c-red">*</span>挂号级别：</label>
+            <div class="formControls col-xs-2 col-sm-2">
+					<span class="select-box"><select class="select" id="register_class" name="register_class">
+						</select></span>
+            </div>
+            <label class="form-label col-xs-1 col-sm-1"><span class="c-red">*</span>看诊医生：</label>
+            <div class="formControls col-xs-2 col-sm-2">
+					<span class="select-box"><select class="select" id="doctor" name="doctor">
+                        <option style='display: none'>请选择</option>
+						</select></span>
+            </div>
+        </div>
+        <div class="row cl">
+<!--            <label class="form-label col-xs-1 col-sm-1">初始号额：</label>-->
+<!--            <div class="formControls col-xs-2 col-sm-2">-->
+<!--                <input type="text" class="input-text" value="20" placeholder="" id="pre_number" name="">-->
+<!--            </div>-->
+<!--            <label class="form-label col-xs-1 col-sm-1">已用号额：</label>-->
+<!--            <div class="formControls col-xs-2 col-sm-2">-->
+<!--                <input type="text" class="input-text" value="5" placeholder="" id="used_number" name="">-->
+<!--            </div>-->
+            <label class="form-label col-xs-1 col-sm-1"><span class="c-red">*</span>病历本：</label>
+            <div class="formControls col-xs-2 col-sm-2">
+					<span class="select-box"><select class="select" id="is_need_paper" name="is_need_paper">
+							<option style='display: none'>请选择</option>
+							<option value="0">否</option>
+							<option value="1">是</option>
+						</select></span>
+            </div>
+            <label class="form-label col-xs-1 col-sm-1"><span class="c-red">*</span>收费方式：</label>
+            <div class="formControls col-xs-2 col-sm-2">
+					<span class="select-box"><select class="select" id="charge_method" name="charge_method">
+							<option style='display: none'>请选择</option>
+							<option>现金</option>
+							<option>支付宝</option>
+							<option>微信</option>
+							<option>银行卡</option>
+						</select></span>
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-1 col-sm-1"><span class="c-red">*</span>应收金额：</label>
+            <div class="formControls col-xs-2 col-sm-2">
+                <input type="text" class="input-text" placeholder="" id="amount" name="amount">
+            </div>
+        </div>
+    </form>
+</article>
+
+<!--_footer 作为公共模版分离出去-->
+<script type="text/javascript" src="lib/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="lib/layer/2.4/layer.js"></script>
+<script type="text/javascript" src="static/h-ui/js/H-ui.min.js"></script>
+<script type="text/javascript" src="static/h-ui.admin/js/H-ui.admin.js"></script>
+<!--/_footer 作为公共模版分离出去-->
+
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript" src="lib/My97DatePicker/4.8/WdatePicker.js"></script>
+<script type="text/javascript" src="lib/jquery.validation/1.14.0/jquery.validate.js"></script>
+<script type="text/javascript" src="lib/jquery.validation/1.14.0/validate-methods.js"></script>
+<script type="text/javascript" src="lib/jquery.validation/1.14.0/messages_zh.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $.ajaxSetup({
+            complete: function(xhr,status) {
+                var sessionStatus = xhr.getResponseHeader('sessionstatus');
+                if(sessionStatus == 'timeout') {
+                    modaldemo();
+                    modalalertdemo("由于您长时间没有操作, session已过期, 请重新登录",2000);
+                    addEventListener("DOMNodeRemoved", function (e) {
+                        //跳转页面
+                        window.top.location.href = "/his/logout";
+                    })
+                }else if (sessionStatus=="noauthority"){
+                    modaldemo();
+                    modalalertdemo("没有权限访问",2000);
+                    addEventListener("DOMNodeRemoved", function (e) {
+                        //跳转页面
+                        window.top.location.href = "/his/index";
+                    })
+                }
+            }
+        });
+        //拉取数据
+        $("#invoice_id").empty();
+        $("#medical_record_num").empty();
+        getInvoice();
+        getMedicalNum();
+
+        $("#department").empty();
+        $("#department").append("<option style='display: none'>请选择</option>");
+        $.ajax({
+            type: "GET",
+            url: "registrar/department",
+            success: function (data) {
+                for (var i = 0; i < data.length; i++) {
+                    $("#department").append("<option value='" + data[i].id + "'>" + data[i].deptName + "</option>");
+                }
+            }, error: function () {
+                modaldemo();
+                modalalertdemo("获取科室数据失败",1000);
+            }
+        });
+        //用病历号挂号
+        $("#medical_record_num").focus(function () {
+            //需要弹窗确认是否输入病历号
+            $("#medical_record_num").val("");
+            $("#medical_record_num").change(function () {
+                var content = $("#medical_record_num").val();
+                if (content == null) {
+                    //获取号码  把获取病历号码封装成函数
+                } else {
+                    $.ajax({
+                        type: "POST",
+                        dataType: "json",
+                        contentType: "application/json",
+                        data: JSON.stringify({"medical_record_num": content}),
+                        url: "registrar/findpatient",
+                        success: function (data) {
+                            //获取数据后填写数据
+                            if (jQuery.isEmptyObject(data)) {
+                                modaldemo();
+                                modalalertdemo("未查询到信息",1000);
+                            } else {
+                                $("#name").val(data.name);
+                                $("#sex").val(data.sex);
+                                $("#age").val(data.age);
+                                $("#unit").val("岁");//还没有unit属性
+                                console.log(data.date_birth);
+                                $("#date_birth").val(data.date_birth);
+                                $("#id_number").val(data.id_number);
+                                $("#address").val(data.address);//需要修改为选择地区型
+                            }
+                        }, error: function (data) {
+                            //有没有其他提示方法
+                            modaldemo();
+                            modalalertdemo("未查询到相关信息",1000);
+                        }
+                    });
+                }
+            });
+
+
+        });
+        //选取科室时初始化挂号级别
+        $("#department").change(function () {
+            $("#register_class").empty();
+            $("#register_class").append("<option style='display: none'>请选择</option>");
+            $("#register_class").append("<option value='2'> 普通号 </option>");
+            $("#register_class").append("<option value='1'> 专家号 </option>");
+            $("#register_class").find("option:contains('请选择')").attr("selected", true);
+        })
+        //选择挂号级别时更新医生列表并查询费用
+        $("#register_class").change(function () {//获取医生下拉列表
+            var department = $("#department  option:selected").val();
+            var register_class = $("#register_class option:selected").val();
+            $("#doctor").empty();
+            $("#doctor").append("<option style='display: none'>请选择</option>");
+            $.ajax({
+                type: "POST",
+                dataType: "json",
+                contentType: "application/json",
+                data: JSON.stringify({"department": department, "register_class": register_class}),
+                url: "registrar/doctor",
+                success: function (data) {
+                    if (jQuery.isEmptyObject(data)) {
+                        modaldemo();
+                        modalalertdemo("当前无医生",1000);
+                    } else {
+                        for (var i = 0; i < data.length; i++) {
+                            $("#doctor").append("<option value='" + data[i].id + "'>" + data[i].name + "</option>");
+                        }
+                    }
+                }, error: function () {
+                    modaldemo();
+                    modalalertdemo("获取医生失败",1000);
+                }
+            });
+            $.ajax({
+                type: "POST",
+                dataType: "json",
+                contentType: "application/json",
+                data: JSON.stringify({register_class: register_class}),
+                url: "registrar/registerfee",
+                success: function (data) {
+                    $("#amount").val(data);
+                }, error: function () {
+                    modaldemo();
+                    modalalertdemo("查询金额失败",1000);
+                }
+            });
+        });
+
+        $('.skin-minimal input').iCheck({
+            checkboxClass: 'icheckbox-blue',
+            radioClass: 'iradio-blue',
+            increaseArea: '20%'
+        });
+        //提交表单前进行验证
+        $("#form-member-add").validate({
+            rules: {
+                invoice_id: {
+                    required: true
+                },
+                medical_record_num: {
+                    required: true
+                },
+                name: {
+                    required: true,
+                    isChinese: true,
+                    minlength: 2,
+                    maxlength: 6,
+                },
+                sex: {
+                    isSelected: true
+
+                },
+                age: {
+                    required: true,
+                    isInteger: true,
+                    isIntGteZero: true
+                },
+                date_birth: {
+                    required: true,
+                    date: true
+                },
+                settlement_type: {
+                    isSelected: true
+                },
+                register_class: {
+                    isSelected: true
+                },
+                doctor: {
+                    isSelected: true
+                },
+                id_number: {
+                    required: true,
+                    isIdCardNo: true,
+                },
+                address: {
+                    required: true,
+
+                },
+                department: {
+                    isSelected: true
+                },
+                register_class: {
+                    isSelected: true
+                }
+                ,
+                doctor: {
+                    isSelected: true
+                },
+                is_need_paper: {
+                    isSelected: true
+                },
+                charge_method: {
+                    isSelected: true
+                },
+                amount: {
+                    required: true
+                }
+
+            },
+            onkeyup: false,
+            focusCleanup:
+                true,
+            success:
+                "valid",
+            submitHandler:
+
+                function (form) {
+                    $(form).ajaxSubmit({
+                        dataType: "json",
+                        success: function (data) { // data 保存提交后返回的数据，一般为 json 数据
+                            if (data.code = 200) {
+                                modaldemo();
+                                modalalertdemo("挂号成功", 1200);
+                                //添加删除监听即隐藏后执行
+                                $('#modal-demo')
+                                addEventListener("DOMNodeRemoved", function (e) {
+                                    //刷新页面
+                                    // location.reload();
+                                    $(form).resetForm(); // 提交后重置表单
+                                    location.reload();
+                                });
+                                var index = parent.layer.getFrameIndex(window.name);
+                                //parent.$('.btn-refresh').click();
+                                parent.layer.close(index);
+                            } else {
+                                modaldemo();
+                                modalalertdemo("挂号失败",1000);
+                            }
+                        }
+                    });
+                }
+        })
+        ;
+    });
+
+    function getInvoice() {
+
+        //从后端获取号码
+        $.ajax({
+            type: "GET",
+            url: "registrar/invoice",
+            success: function (data) {
+                $("#invoice_id").attr("value", data);//防止被清空
+                // $("#invoice_id").val(data);
+            }, error: function () {
+                modaldemo();
+                modalalertdemo("生成发票号失败",1000);
+            }
+        });
+    }
+
+    //获取病历号
+    function getMedicalNum() {
+        $.ajax({
+            type: "GET",
+            url: "registrar/medical",
+            success: function (data) {
+                $("#medical_record_num").attr("value", data);//防止被清空
+                // $("#medical_record_num").val(data);
+            }, error: function () {
+                modaldemo();
+                modalalertdemo("生成病历号失败",1000);
+            }
+        })
+    }
+
+    //弹出消息提示
+    function modaldemo() {
+        $("#modal-demo").modal("show");
+        $("#modal-demo").addClass("backdrop", false);
+    }
+
+    function modalalertdemo(str, time) {
+        $.Huimodalalert(str, time);
+    };
+</script>
+<!--/请在上方写此页面业务相关的脚本-->
+</body>
+
+</html>

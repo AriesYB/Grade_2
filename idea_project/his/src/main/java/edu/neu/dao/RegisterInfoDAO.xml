@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.neu.dao.RegisterInfoDAO">
+    <!-- 查询所有 -->
+    <select id="findAll" resultType="edu.neu.entity.RegisterInfo">
+        SELECT *
+        FROM register_info
+        WHERE isDeleted = 0
+    </select>
+    <!-- 用id查询 -->
+    <select id="findById" parameterType="int" resultType="edu.neu.entity.RegisterInfo">
+        SELECT *
+        FROM register_info
+        WHERE id = #{id}
+          AND isDeleted = 0
+    </select>
+
+    <!-- 插入 -->
+    <insert id="insertRegisterInfo" parameterType="RegisterInfo">
+        INSERT INTO register_info (ID_number, medical_record_num, settlement_type, register_class, department, doctor,
+                                   is_need_book, time, see_doctor_time, am_or_pm, status, register_user)
+        VALUES (#{ID_number}, #{medical_record_num}, #{settlement_type}, #{register_class}, #{department}, #{doctor},
+                #{is_need_book}, #{time}, #{see_doctor_time}, #{am_or_pm}, #{status}, #{register_user})
+    </insert>
+
+    <!-- 更新 -->
+    <update id="updateRegisterInfo" parameterType="RegisterInfo">
+        UPDATE register_info
+        SET ID_number=#{ID_number},
+            medical_record_num=#{medical_record_num},
+            settlement_type=#{settlement_type},
+            register_class=#{register_class},
+            department=#{department},
+            doctor=#{doctor},
+            is_need_book=#{is_need_book},
+            time=#{time},
+            see_doctor_time=#{see_doctor_time},
+            am_or_pm=#{am_or_pm},
+            status=#{status},
+            register_user=#{register_user}
+        WHERE id = #{id}
+    </update>
+    <!-- 删除 -->
+    <update id="deleteRegisterInfoById" parameterType="int">
+        UPDATE register_info
+        SET isDeleted = 1
+        WHERE id = #{id}
+          AND isDeleted = 0
+    </update>
+    <!--    <select id="findByDoctorDate" resultType="edu.neu.entity.MedicalRecordPage">-->
+    <!--        SELECT *-->
+    <!--        FROM register_info-->
+    <!--        WHERE doctor = #{0}-->
+    <!--          AND (see_doctor_time BETWEEN #{1} AND #{2})-->
+    <!--          AND status != 3-->
+    <!--          AND isDeleted = 0-->
+    <!--    </select>-->
+    <select id="findByDoctorDate" resultType="edu.neu.entity.MedicalRecordPage">
+        SELECT t3.id,
+               t3.register_id,
+               t1.`name`,
+               t1.ID_number,
+               t2.`status`,
+               t3.medical_record_num,
+               t3.chief_complaint,
+               t3.current_treatment,
+               t3.history_present_illness,
+               t3.past_history,
+               t3.allergic_history,
+               t3.health_checkup,
+               t3.primary_diagnosis,
+               t3.diagnosis_type,
+               t3.checkup_advice,
+               t3.announcements,
+               t3.medical_record_status
+        FROM (patient AS t1
+            INNER JOIN register_info AS t2 ON t1.ID_number = t2.ID_number)
+                 INNER JOIN medical_record AS t3
+                            ON t2.id = t3.register_id AND t2.medical_record_num = t3.medical_record_num
+        WHERE t2.doctor = #{0}
+          AND t2.see_doctor_time = #{1}
+          AND t3.medical_record_status != 3
+          AND t1.isDeleted = 0
+          AND t2.isDeleted = 0
+          AND t3.isDeleted = 0
+    </select>
+    <select id="findBySelf" parameterType="edu.neu.entity.RegisterInfo" resultType="edu.neu.entity.RegisterInfo">
+        SELECT *
+        FROM register_info
+        WHERE ID_number = #{0}
+          AND doctor = #{1}
+          AND medical_record_num = #{2}
+          AND isDeleted = 0
+    </select>
+    <!-- 获取一个病人的具体病历信息 -->
+    <select id="findByDoctorMedicalId" resultType="edu.neu.entity.MedicalRecordPage">
+        SELECT t3.id,
+               t3.register_id,
+               t1.`name`,
+               t1.ID_number,
+               t2.`status`,
+               t3.medical_record_num,
+               t3.chief_complaint,
+               t3.current_treatment,
+               t3.history_present_illness,
+               t3.past_history,
+               t3.allergic_history,
+               t3.health_checkup,
+               t3.primary_diagnosis,
+               t3.diagnosis_type,
+               t3.checkup_advice,
+               t3.announcements,
+               t3.medical_record_status,
+               t1.age,
+               t1.sex
+        FROM (patient AS t1
+            INNER JOIN register_info AS t2 ON t1.ID_number = t2.ID_number)
+                 INNER JOIN medical_record AS t3
+                            ON t2.id = t3.register_id AND t2.medical_record_num = t3.medical_record_num
+        WHERE t2.doctor = #{0}
+          AND t3.id = #{1}
+          AND (t2.see_doctor_time = DATE_FORMAT(#{2}, '%Y-%m-%d'))
+          AND t1.isDeleted = 0
+          AND t2.isDeleted = 0
+          AND t3.isDeleted = 0
+    </select>
+</mapper>

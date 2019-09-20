@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.neu.dao.PrescriptionItemDAO">
+    <select id="findById" parameterType="int" resultType="edu.neu.entity.PrescriptionItem">
+        SELECT *
+        FROM prescription_item
+        WHERE id = #{id}
+          AND isDeleted = 0;
+    </select>
+    <select id="findByPrescriptionId" parameterType="int" resultType="edu.neu.entity.PrescriptionItem">
+        SELECT *
+        FROM prescription_item
+        WHERE prescription_id = #{id}
+          AND isDeleted = 0;
+    </select>
+    <insert id="addPrescriptionItem" parameterType="edu.neu.entity.PrescriptionItem">
+        INSERT INTO prescription_item (prescription_id, drug, `usage`, consumption, frequency,
+                                       quantity, charge_status, status)
+        VALUES (#{prescription_id}, #{drug}, #{usage}, #{consumption}, #{frequency}, #{quantity},
+                #{charge_status}, #{status});
+    </insert>
+    <update id="deletePrescriptionItem" parameterType="int">
+        UPDATE prescription_item
+        SET isDeleted = 1
+        WHERE id = #{id}
+          AND isDeleted = 0;
+    </update>
+    <update id="deletePrescription" parameterType="int">
+        UPDATE prescription_item
+        SET isDeleted = 1
+        WHERE prescription_id = #{id}
+          AND isDeleted = 0;
+    </update>
+    <select id="findPageByPrescriptionId" parameterType="int" resultType="edu.neu.entity.PrescriptionItemPage">
+        SELECT t2.DrugsName,
+               t2.DrugsFormat,
+               t2.DrugsPrice,
+               t1.drug,
+               t1.`usage`,
+               t1.consumption,
+               t1.frequency,
+               t1.quantity
+        FROM prescription_item AS t1
+                 INNER JOIN drugs AS t2 ON t1.drug = t2.id
+        WHERE t1.prescription_id = #{id}
+          And t1.isDeleted = 0;
+    </select>
+    <select id="updatePrescriptionItem" parameterType="edu.neu.entity.PrescriptionItem">
+        UPDATE prescription_item
+        SET `usage`     = #{usage},
+            consumption = #{consumption},
+            frequency=#{frequency},
+            quantity=#{quantity}
+        WHERE prescription_id = #{prescription_id}
+          AND isDeleted = 0
+    </select>
+    <select id="findCostPageByMedicalNum" parameterType="int" resultType="edu.neu.entity.CostPage">
+        SELECT p3.id,
+               p2.name,
+               p2.ID_number,
+               p2.address,
+               m.medical_record_num,
+               d.DrugsName                              AS project_name,
+               d.DrugsPrice                             AS price,
+               p3.quantity,
+               DATE_FORMAT(p.time, '%Y-%m-%d %H:%i:%s') AS time,
+               p.status
+        FROM medical_record AS m
+                 INNER JOIN prescription AS p
+                            ON m.medical_record_num = p.medical_record_num
+                 INNER JOIN register_info AS r ON m.medical_record_num = r.medical_record_num
+                 INNER JOIN patient AS p2 ON r.ID_number = p2.ID_number
+                 INNER JOIN prescription_item AS p3 ON p.id = p3.prescription_id
+                 INNER JOIN drugs AS d ON p3.drug = d.id
+        WHERE m.medical_record_num = #{medicalNum}
+          AND p.status = 2
+          AND p3.charge_status = 1
+          AND r.status != 3
+          AND m.isDeleted = 0
+          AND r.isDeleted = 0
+          AND p2.isDeleted = 0
+          AND p3.isDeleted = 0
+    </select>
+    <update id="setChargeStatus" parameterType="int">
+        UPDATE prescription_item
+        SET charge_status = #{1}
+        WHERE id = #{0}
+          AND isDeleted = 0;
+    </update>
+</mapper>

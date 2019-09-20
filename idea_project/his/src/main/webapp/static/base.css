@@ -1,0 +1,60 @@
+.textarea{
+    height: 80px;
+}
+.tabBar{
+    border-bottom:solid 2px #e8e8e8 !important;
+}
+.tabBar span {
+    cursor:pointer;
+    display:inline-block;
+    float:left;
+    height:40px;
+    line-height:40px;
+    padding:0 20px;
+    border-bottom:solid 2px #fff;
+    background-color:#fff;
+    color: #a9a9a9;
+}
+.tabBar span.current {
+    border-bottom-color:#1890ff;
+    background-color:#fff;
+    color:#000
+}
+.tabCon {
+    display:none
+}
+.btn-secondary-outline{
+    border-block-color: #5a98de !important;
+    border-coloer:#5a98de!important;
+}
+.btn-secondary-outline:hover{
+    border-block-color: #5a98de !important;
+    background-color: #5a98de !important;
+}
+.tabBar1{
+    border-bottom:solid 2px #e8e8e8 !important;
+}
+.tabBar1 span {
+    cursor:pointer;
+    display:inline-block;
+    float:left;
+    height:40px;
+    line-height:40px;
+    padding:0 20px;
+    border-bottom:solid 2px #fff;
+    background-color:#fff;
+    color: #a9a9a9;
+}
+.tabBar1 span.current1 {
+    border-bottom-color:#1890ff;
+    background-color:#fff;
+    color:#000
+}
+.tabCon1 {
+    display:none
+}
+.jiajian_btn{
+    background-color: transparent;
+    color: #5a98de;
+    border: none;
+}

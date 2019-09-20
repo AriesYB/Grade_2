@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.neu.dao.ChargesDetailDAO">
+    <select id="findById" parameterType="int" resultType="edu.neu.entity.ChargesDetails">
+        SELECT *
+        FROM charges_details
+        WHERE id = #{id}
+          AND isDeleted = 0;
+    </select>
+    <insert id="insertChargesDetail" parameterType="edu.neu.entity.ChargesDetails">
+        INSERT INTO charges_details (register_id, project, project_type, name, price, quantity, time, user,
+                                     charge_method, invoice, type)
+        VALUES (#{register_id}, #{project}, #{project_type}, #{name}, #{price}, #{quantity}, #{time}, #{user},
+                #{charge_method}, #{invoice}, #{type});
+    </insert>
+</mapper>
