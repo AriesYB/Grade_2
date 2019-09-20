@@ -568,3 +568,103 @@
 2月 13, 2019 16:21:26.19 
 2月 13, 2019 16:21:26.19 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 2月 13, 2019 16:21:26.19 
+
+6月 12, 2019 21:25:48.11 NEW SESSION
+6月 12, 2019 21:25:48.11 [Child 8492, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+6月 12, 2019 21:25:48.13 [Child 8492, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+6月 12, 2019 21:25:48.13 [Parent 704, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+6月 12, 2019 21:25:48.13 [Parent 704, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+6月 12, 2019 21:25:48.13 [Parent 704, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+6月 12, 2019 21:25:48.13 [Child 6316, Chrome_ChildThread] WARNING: pipe error: 109: fi
+6月 12, 2019 21:25:48.13 ###!!! [Parent][MessageChannel] Error: (msgtype=0x1E0098,name=PBrowser::Msg_UpdateNativeWindowHandle) Closed channel: cannot send/recv
+6月 12, 2019 21:25:48.13 
+6月 12, 2019 21:25:48.13 le z:/bui
+6月 12, 2019 21:25:48.13 ###!!! [Parent][MessageChannel] Error: (msgtype=0x1E0087,name=PBrowser::Msg_Destroy) Closed channel: cannot send/recv
+6月 12, 2019 21:25:48.13 
+6月 12, 2019 21:25:48.13 ld/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+6月 12, 2019 21:25:48.13 
+6月 12, 2019 21:25:48.13 ###!!! [Child][MessageChannel] Error: (msgtype=0x350112,name=PContent::Msg_DetachBrowsingContext) Closed channel: cannot send/recv
+6月 12, 2019 21:25:48.13 
+6月 12, 2019 21:25:48.13 
+6月 12, 2019 21:25:48.13 ###!!! [Parent][MessageChannel] Error: (msgtype=0x350115,name=PContent::Msg_AsyncMessage) Closed channel: cannot send/recv
+6月 12, 2019 21:25:48.13 
+6月 12, 2019 21:25:48.13 [Child 10440, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+6月 12, 2019 21:25:48.37 [Child 10440, Chrome_ChildThread] WARNING: pipe error: 10
+6月 12, 2019 21:25:48.37 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+6月 12, 2019 21:25:48.37 
+
+7月 22, 2019 14:05:09.66 NEW SESSION
+7月 22, 2019 14:05:09.66 [Parent 4856, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+7月 22, 2019 14:05:09.66 [Child 6552, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+7月 22, 2019 14:05:09.66 [Child 6552, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chr[Parent 4856, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+7月 22, 2019 14:05:09.66 [Child 4528, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+7月 22, 2019 14:05:09.68 [Child 4528, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ip[Parent 4856, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+7月 22, 2019 14:05:09.68 [Child 10268, Chrome_ChildThread] WARNING: pipe err
+7月 22, 2019 14:05:09.68 ###!!! [Parent][MessageChannel] Error: (msgtype=0x1E0098,name=PBrowser::Msg_UpdateNativeWindowHandle) Closed channel: cannot send/recv
+7月 22, 2019 14:05:09.68 
+7月 22, 2019 14:05:09.68 or: 109: file z:/build/build/src/ipc/chromiu
+7月 22, 2019 14:05:09.68 ###!!! [Parent][MessageChannel] Error: (msgtype=0x1E0087,name=PBrowser::Msg_Destroy) Closed channel: cannot send/recv
+7月 22, 2019 14:05:09.69 
+7月 22, 2019 14:05:09.69 m/src/chrome/common/ipc_channel_win.cc, line 332
+7月 22, 2019 14:05:09.69 
+7月 22, 2019 14:05:09.69 ###!!! [Child][MessageChannel] Error: (msgtype=0x350112,name=PContent::Msg_DetachBrowsingContext) Closed channel: cannot send/recv
+7月 22, 2019 14:05:09.69 
+7月 22, 2019 14:05:09.91 
+7月 22, 2019 14:05:09.91 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+7月 22, 2019 14:05:09.91 
+
+7月 22, 2019 17:06:49.22 NEW SESSION
+7月 22, 2019 17:06:49.22 [Parent 13704, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+7月 22, 2019 17:06:49.22 [Parent 13704, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+7月 22, 2019 17:06:49.43 [Parent 13704, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+7月 22, 2019 17:06:49.43 
+7月 22, 2019 17:06:49.43 ###!!! [Parent][MessageChannel] Error: (msgtype=0x1E0098,name=PBrowser::Msg_UpdateNativeWindowHandle) Closed channel: cannot send/recv
+7月 22, 2019 17:06:49.43 
+7月 22, 2019 17:06:49.43 
+7月 22, 2019 17:06:49.43 ###!!! [Parent][MessageChannel] Error: (msgtype=0x1E0087,name=PBrowser::Msg_Destroy) Closed channel: cannot send/recv
+7月 22, 2019 17:06:49.43 
+7月 22, 2019 17:06:49.43 
+7月 22, 2019 17:06:49.43 ###!!! [Child][MessageChannel] Error: (msgtype=0x1E0001,name=PBrowser::Msg_AsyncMessage) Channel closing: too late to send/recv, messages will be lost
+7月 22, 2019 17:06:49.43 
+7月 22, 2019 17:06:49.43 
+7月 22, 2019 17:06:49.43 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+7月 22, 2019 17:06:49.44 
+7月 22, 2019 17:06:49.44 
+7月 22, 2019 17:06:49.44 ###!!! [Child][MessageChannel] Error: (msgtype=0x1E0001,name=PBrowser::Msg_AsyncMessage) Closed channel: cannot send/recv
+7月 22, 2019 17:06:49.44 
+7月 22, 2019 17:06:49.44 
+7月 22, 2019 17:06:49.44 ###!!! [Child][MessageChannel] Error: (msgtype=0x350112,name=PContent::Msg_DetachBrowsingContext) Closed channel: cannot send/recv
+7月 22, 2019 17:06:49.44 
+7月 22, 2019 17:06:49.45 [Parent 13704, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+7月 22, 2019 17:06:49.73 
+7月 22, 2019 17:06:49.73 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+7月 22, 2019 17:06:49.73 
+7月 22, 2019 17:06:50.02 [GPU 13804, Chrome_ChildThread] 
+7月 22, 2019 17:19:03.45 [Parent 11904, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+7月 22, 2019 17:19:03.45 [Child 12524, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+7月 22, 2019 18:15:26.01 [Child 12524, Chrome_ChildThrea[Parent 11904, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+7月 22, 2019 18:15:26.02 [Child 5008, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+7月 22, 2019 18:15:26.02 [Child 5008, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+7月 22, 2019 18:15:26.03 [Parent 11904, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+7月 22, 2019 18:15:26.06 [Parent 11904, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+7月 22, 2019 18:15:26.06 [Child 7312, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+7月 22, 2019 18:15:26.18 
+7月 22, 2019 18:15:26.18 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+7月 22, 2019 18:15:26.18 
+7月 22, 2019 18:15:26.18 [GPU 4008, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+7月 22, 2019 18:15:26.22 
+7月 22, 2019 18:15:26.22 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+7月 22, 2019 18:15:26.22 
+
+7月 25, 2019 10:25:54.74 NEW SESSION
+7月 25, 2019 10:25:54.74 [6492:2732:0725/102554.636:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4455)] NOT IMPLEMENTED
+7月 25, 2019 10:27:01.87 [2072:6936:0725/102701.878:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4455)] NOT IMPLEMENTED
+7月 25, 2019 10:54:50.69 [8568:224:0725/105450.692:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4455)] NOT IMPLEMENTED
+7月 25, 2019 11:22:21.90 [6092:7352:0725/112221.904:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4455)] NOT IMPLEMENTED
+7月 25, 2019 11:29:04.03 [11032:12168:0725/112904.032:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4455)] NOT IMPLEMENTED
+7月 25, 2019 11:29:43.35 [5264:7124:0725/112943.352:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4455)] NOT IMPLEMENTED
+7月 25, 2019 11:36:33.62 [1484:5996:0725/113633.624:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4455)] NOT IMPLEMENTED
+7月 25, 2019 11:37:46.67 [1484:5996:0725/113746.672:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4455)] NOT IMPLEMENTED
+7月 25, 2019 11:45:28.95 [10504:11628:0725/114528.952:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4455)] NOT IMPLEMENTED
+7月 25, 2019 11:48:58.39 [9508:3764:0725/114858.399:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4455)] NOT IMPLEMENTED
+7月 25, 2019 11:51:14.54 [116:10612:0725/115114.543:ERROR:gles2_cmd_decoder_passthrough_doers.cc(4455)] NOT IMPLEMENTED
